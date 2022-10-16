@@ -4,9 +4,9 @@ import SocialMedia from "./SocialMedia";
 const Hero = () => {
   return (
     <div>
-      <div className="flex flex-col max-w-7xl mx-auto py-60 justify-center items-center">
+      <div className="flex flex-col max-w-7xl mx-auto pt-56 md:pt-60 pb-60 justify-center items-center">
         <p className="text-xs uppercase">Let&apos;s make something great together</p>
-        <h1 className="text-2xl md:text-4xl font-bold text-gray-600 pt-3 md:pt-4 pb-3 md:pb-6 ">
+        <h1 className="text-4xl md:text-4xl font-bold text-gray-600 pt-3 md:pt-4 pb-3 md:pb-6 ">
           Hi, I&apos;m <span className="text-blue-600">Shubham</span>
         </h1>
         <div className="text-center text-2xl md:text-4xl font-semibold text-slate-500">
