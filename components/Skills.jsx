@@ -70,10 +70,10 @@ const Skills = () => {
       title: "MongoDB",
       img: "mongodb.png",
     },
-    {
-      title: "MySQL",
-      img: "mysql.png",
-    },
+    // {
+    //   title: "MySQL",
+    //   img: "mysql.png",
+    // },
     {
       title: "Firebase",
       img: "firebase.png",
@@ -109,14 +109,14 @@ const Skills = () => {
   ];
 
   return (
-    <div className="">
+    <section id="skills" className="">
       <div className="max-w-7xl px-8 mx-auto pt-10 pb-32">
         <p className="uppercase text-blue-600 text-lg">Skills</p>
         <p className="mt-6 text-3xl font-medium max-w-fit">My Skills</p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-8 sm:gap-4 md:gap-10 pt-14 pl-0 md:pl-6">
-          {skillsInfo.map((skill) => (
-            <div className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-lg">
+          {skillsInfo.map((skill,index) => (
+            <div className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-lg" key={index}>
               <Image
                 src={`/assets/images/skills/${skill.img}`}
                 alt={skill.title}
@@ -131,7 +131,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

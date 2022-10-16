@@ -3,7 +3,34 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  scroll-behavior: smooth;
+}
+
 .highLightText {
   color: rgb(71 71 71);
   font-weight: 500;
+}
+
+.githubIcon:hover {
+  color: #fff;
+  background-color: #000;
+}
+.instagramIcon:hover {
+  color: #fff;
+  background: linear-gradient(
+    145deg,
+    rgb(111, 0, 255) 10%,
+    rgb(235, 11, 243) 80%,
+    rgb(255, 128, 0) 10%
+  );
+  font-weight: 600;
+}
+.linkedinIcon:hover {
+  color: #fff;
+  background-color: #0077b5;
+}
+.twitterIcon:hover {
+  color: #fff;
+  background-color: #1da1f2;
 }

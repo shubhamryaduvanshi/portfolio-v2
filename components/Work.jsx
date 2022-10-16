@@ -10,7 +10,7 @@ const Work = () => {
       website: "https://kuchnaya.com/",
       jobType: "Full Time",
       work: [
-        "Worked on a hunt booking web app. Primarily focused on creating reusable react components, mobile responsiveness, partial payment feature, form validation, and SEO using <span class='highLightText'> GraphQL, Gatsby, Chakra UI,</span> and <span class='highLightText'>React Helmet.</span>",
+        "Worked on a hunt booking web app. Primarily focused on creating reusable react components, multi-device responsiveness, partial payment feature, form validation, and SEO using <span class='highLightText'> GraphQL, Gatsby, Chakra UI,</span> and <span class='highLightText'>React Helmet.</span>",
         // "Worked on Figma plugin that generates proper JSON structure for Lottie files using React.",
         // "Worked on the home page for auropay.net using Next JS.",
         "Created reusable components and integrated stripe payment gateway for vidyback.com using <span class='highLightText'> React, Chakra UI, NodeJS </span> and <span class='highLightText'> Express. </span>",
@@ -27,7 +27,7 @@ const Work = () => {
   ];
 
   return (
-    <div className="">
+    <section id="work" className="">
       <div className="max-w-7xl px-8 mx-auto pt-10 pb-20">
         <p className="uppercase text-blue-600 text-lg">Work</p>
         <p className="mt-6 text-3xl font-medium max-w-fit">Experience</p>
@@ -42,7 +42,7 @@ const Work = () => {
                     href={work.website}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-md text-blue-700 flex items-center"
+                    className="text-md text-blue-700 flex items-center mt-0.5"
                   >
                     {work.company}{" "}
                     <BsBoxArrowUpRight className="ml-1 mb-2" size={12} />
@@ -62,7 +62,7 @@ const Work = () => {
                       {work.work.map((work, index) => (
                         <div
                           key={index}
-                          className="flex items-start md:items-center mt-3 text-md text-justify md:text-left"
+                          className="flex items-start md:items-center mt-3 text-justify md:text-left"
                         >
                           {/* <div className="w-2 h-2 bg-gray-600 rounded-full"></div> */}
                           <div className="mt-0.5 md:mt-0">{index + 1}.</div>
@@ -85,7 +85,7 @@ const Work = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

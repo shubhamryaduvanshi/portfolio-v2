@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "title": "Pokedex App",
+    "bannerImage": "/assets/images/projects/pokedex/poster.png",
+    "description": "A Pokedex app that allows you to search for Pokemon and view their stats.",
+    "gitHubLink": "https://github.com/shubhamryaduvanshi/pokedex",
+    "techStack": ["Next JS", "Tailwind CSS", "PokeAPI"],
+    "linkText": "View on Github",
+    "liveUrl": "https://my-pokedex-web.vercel.app/",
+    "projectScreenShots": [
+      "pokedex/Image-1.png",
+      "pokedex/image-2.png",
+      "pokedex/image-3.png"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Git Search",
+    "bannerImage": "/assets/images/projects/gitSearch/poster.png",
+    "description": "A Github user search app that allows you to search for Github users and view their profile.",
+    "techStack": ["Next JS", "Tailwind CSS", "Github API"],
+    "gitHubLink": "https://github.com/shubhamryaduvanshi/GitSearch",
+    "linkText": "View on Github",
+    "liveUrl": "https://gitsearchbyshubham.netlify.app/",
+    "projectScreenShots": [
+      "gitSearch/image-1.png",
+      "gitSearch/image-2.png",
+      "gitSearch/image-3.png",
+      "gitSearch/image-4.png"
+    ]
+  }
+]
