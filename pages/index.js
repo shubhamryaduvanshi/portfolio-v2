@@ -22,6 +22,12 @@ export default function Home() {
           responsive front-end web application while learning backend
           technologies."
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@1,100&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <div className="font-poppins relative">
         <Header />
