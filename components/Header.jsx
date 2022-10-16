@@ -31,7 +31,7 @@ const Header = () => {
           <a className="mx-3" href="#projects">
             Projects
           </a>
-          <a className="mx-3" href="#">
+          <a className="mx-3" href="#contact">
             Contact
           </a>
         </div>
@@ -67,7 +67,7 @@ const Header = () => {
                   <a className="my-3" href="#projects" onClick={toggleMenu}>
                     Projects
                   </a>
-                  <a className="my-3" href="#" onClick={toggleMenu}>
+                  <a className="my-3" href="#contact" onClick={toggleMenu}>
                     Contact
                   </a>
                 </div>
