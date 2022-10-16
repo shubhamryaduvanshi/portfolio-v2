@@ -90,6 +90,7 @@ const Dialog = ({ projectInfo, closeDialog }) => {
                         <a
                           href={projectInfo.liveUrl}
                           target="_blank"
+                          rel="noreferrer"
                           className="bg-blue-500 hover:bg-blue-600 cursor-pointer text-white py-1 px-2 rounded flex items-center justify-center gap-2"
                         >
                           <FaChrome />
@@ -99,6 +100,7 @@ const Dialog = ({ projectInfo, closeDialog }) => {
                         <a
                           href={projectInfo.gitHubLink}
                           target="_blank"
+                          rel="noreferrer"
                           className="bg-slate-700 hover:bg-black cursor-pointer text-white py-1 px-2 rounded flex items-center justify-center gap-2"
                         >
                           <BsGithub />
