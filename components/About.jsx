@@ -11,13 +11,13 @@ const About = () => {
           <div className="w-full px-2 md:max-w-2xl">
             <div className="mt-12 text-gray-600 md:text-md text-justify md:text-left">
               <p>
-                I'm currently persuing MCA from University of Mumbai. I'm a
+                I&apos;m currently persuing MCA from University of Mumbai. I&apos;m a
                 Frontend Web Developer based in India. I specialize in building
                 (and occasionally designing) exceptional websites, applications,
                 and everything in between.
               </p>
               <p className="mt-6">
-                I enjoy creating things that live on the internet. I'm focused
+                I enjoy creating things that live on the internet. I&apos;m focused
                 on building responsive front-end web application while learning
                 backend technologies.
               </p>
