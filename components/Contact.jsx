@@ -39,7 +39,7 @@ const Contact = () => {
       <div className="max-w-7xl px-8 mx-auto pt-0 md:pt-10 pb-16 md:pb-20">
         <p className="uppercase text-blue-600 text-lg">Contact</p>
         <p className="mt-6 text-3xl font-medium text-center sm:text-left">
-          Let's make something great!
+          Let&apos;s make something great!
         </p>
         <div className="flex items-center justify-around mt-12 flex-col md:flex-row">
           <div className=" bg-blue-50 z-0 w-full max-w-md p-4 rounded-md shadow-md md:shadow-xl">
