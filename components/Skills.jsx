@@ -98,10 +98,10 @@ const Skills = () => {
       title: "Netlify",
       img: "netlify.png",
     },
-    {
-      title: "AWS",
-      img: "amazon-aws.png",
-    },
+    // {
+    //   title: "AWS",
+    //   img: "amazon-aws.png",
+    // },
     // {
     //   title: "Azure",
     //   img: "azure.png",
