@@ -18,9 +18,7 @@ export default function Home() {
           name="description"
           content="I'm a Frontend Web Developer based in India. I specialize
           in building (and occasionally designing) exceptional websites,
-          applications, and everything in between. I'm focused on building
-          responsive front-end web application while learning backend
-          technologies."
+          applications, and everything in between."
         />
         <meta name="og:image" content="/myProfile.png" />
         <meta

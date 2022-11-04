@@ -26,11 +26,11 @@ const Hero = () => {
           />
         </div>
 
-        <p className="max-w-3xl text-justify md:text-center mt-6 md:mt-8 px-8 md:px-4 text-sm text-gray-600">
+        <h2 className="max-w-3xl text-justify md:text-center mt-6 md:mt-8 px-8 md:px-4 text-sm text-gray-600">
           I&apos;m a Frontend Web Developer based in India. I specialize in building
           (and occasionally designing) exceptional websites, applications, and
           everything in between.
-        </p>
+        </h2>
 
         {/* social media icons */}
         <SocialMedia />
