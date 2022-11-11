@@ -14,7 +14,9 @@ const Header = () => {
   return (
     <div className="shadow-lg w-full sticky z-10 top-0 bg-white">
       <div className="flex justify-between items-center py-6 px-8  max-w-7xl mx-auto">
-        <p className="text-2xl font-semibold font-greatVibes italic">Shubham</p>
+        <a className="text-2xl font-semibold font-greatVibes italic" href="#">
+          Shubham
+        </a>
         <div className="hidden md:flex uppercase">
           <a className="mx-3" href="#">
             Home

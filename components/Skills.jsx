@@ -46,18 +46,18 @@ const Skills = () => {
       title: "Chakra UI",
       img: "chakra.png",
     },
-    {
-      title: "Bootstrap",
-      img: "bootstrap.png",
-    },
+    // {
+    //   title: "Bootstrap",
+    //   img: "bootstrap.png",
+    // },
     {
       title: "Tailwind",
       img: "tailwind.png",
     },
-    {
-      title: "Figma",
-      img: "figma.png",
-    },
+    // {
+    //   title: "Figma",
+    //   img: "figma.png",
+    // },
     {
       title: "Node",
       img: "nodejs.png",
@@ -74,10 +74,10 @@ const Skills = () => {
     //   title: "MySQL",
     //   img: "mysql.png",
     // },
-    {
-      title: "Firebase",
-      img: "firebase.png",
-    },
+    // {
+    //   title: "Firebase",
+    //   img: "firebase.png",
+    // },
     {
       title: "Sass",
       img: "sass.png",
@@ -90,10 +90,10 @@ const Skills = () => {
       title: "Vercel",
       img: "vercel.png",
     },
-    {
-      title: "Heroku",
-      img: "heroku.png",
-    },
+    // {
+    //   title: "Heroku",
+    //   img: "heroku.png",
+    // },
     {
       title: "Netlify",
       img: "netlify.png",
