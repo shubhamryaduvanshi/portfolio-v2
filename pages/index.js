@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="I'm a Frontend Web Developer based in India. I specialize
+          content="I'm a Web Developer based in India. I specialize
           in building (and occasionally designing) exceptional websites,
           applications, and everything in between."
         />
