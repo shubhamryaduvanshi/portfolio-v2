@@ -105,7 +105,7 @@ const Contact = () => {
             <div className="mx-auto">
               <SocialMedia />
               <div className="flex flex-col mt-8 border py-1 px-2 border-blue-200 rounded-lg hover:text-blue-700">
-                <a href="mailto:" className="text-blue-500 hover:text-blue-700">
+                <a href="mailto:yshubhamr@gmail.com" className="text-blue-500 hover:text-blue-700">
                   yshubhamr@gmail.com
                 </a>
               </div>
