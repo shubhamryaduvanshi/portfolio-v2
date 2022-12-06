@@ -35,7 +35,7 @@
     "title": "Git Search",
     "bannerImage": "/assets/images/projects/gitSearch/poster.png",
     "description": "A Github user search app that allows you to search for Github users and view their profile.",
-    "techStack": ["Next JS", "Tailwind CSS", "Github API"],
+    "techStack": ["Solid JS", "Tailwind CSS", "Github API"],
     "gitHubLink": "https://github.com/shubhamryaduvanshi/GitSearch",
     "linkText": "View on Github",
     "liveUrl": "https://gitsearchbyshubham.netlify.app/",

@@ -21,6 +21,7 @@ const Work = () => {
         " Developed an embed-able <span class='highLightText'>invoice pay </span>widget with end-to-end <span class='highLightText'> encryption </span>, multiple client-side <span class='highLightText'> customizations </span> and validation using <span class='highLightText'> Solid JS </span>from POC to Production. ",
 
         " Developed an embed-able invoice pay widget<span class='highLightText'> configuration </span> dashboard (where the merchant/admin can configure the searchable fields, pay button, header, footer, payment options, and color scheme selector) in the <span class='highLightText'> Angular</span> web app.",
+        " Developed an <span class='highLightText'>Invoice Pay</span> using Solid JS from Scratch.",
         " Worked on several other features in <span class='highLightText'>payments domain.</span>",
       ],
     },
