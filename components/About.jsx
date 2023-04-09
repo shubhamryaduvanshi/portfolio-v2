@@ -34,12 +34,13 @@ const About = () => {
           <div className="flex items-center justify-around flex-col-reverse md:flex-row">
             <div className="w-full px-2 md:max-w-2xl">
               <div className="mt-12 text-gray-600 md:text-md text-justify md:text-left">
-                {/* <p>
-                  I&apos;m currently persuing MCA from University of Mumbai.
-                  I&apos;m a Frontend Web Developer based in India. I specialize
-                  in building (and occasionally designing) exceptional websites,
-                  applications, and everything in between.
-                </p> */}
+                <p>
+                  I&apos;m currently persuing MCA from Savitribai Phule Pune
+                  University. I&apos;m a Frontend Web Developer based in India.
+                  I specialize in building (and occasionally designing)
+                  exceptional websites, applications, and everything in between.
+                </p>
+
                 <p className="mt-6">
                   I enjoy creating things that live on the internet. I&apos;m
                   focused on building responsive front-end web application while
@@ -53,7 +54,10 @@ const About = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mt-6 md:grid-cols-3">
                   {aboutGrid.map((item) => (
-                    <div key={item.id} className="flex items-center mt-4 md:mt-6">
+                    <div
+                      key={item.id}
+                      className="flex items-center mt-4 md:mt-6"
+                    >
                       <div className="flex items-center justify-center w-10 h-10 mr-4 text-white bg-blue-300 rounded-full">
                         {item.icon}
                       </div>

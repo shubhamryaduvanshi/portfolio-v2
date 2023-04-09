@@ -22,6 +22,7 @@ const Project = ({ project, showProjectDetails }) => {
         >
           {isHovered && (
             <div
+              hidden={!isHovered}
               style={{ background: "rgba(0,0,0,0.7)" }}
               className="absolute bottom-0 left-0 z-10 w-full h-24 rounded-md transition-all duration-500 ease-in-out flex justify-center items-center flex-col"
             >
