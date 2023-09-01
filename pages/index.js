@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Shubham Yadav</title>
+        <title>Shubham Yadav - Software Developer</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
@@ -23,7 +23,44 @@ export default function Home() {
         <meta name="og:image" content="/myProfile.png" />
         <meta
           name="keywords"
-          content="Shubham Yadav, Web developer in thane, Web developer in Mumbai, MEAN Stack developer in Thane, MERN Stack developer in Thane, MERN Stack developer in Mumbai, Frontend developer in thane, Frontend developer in Mumbai, Full Stack developer in thane, Full Stack developer in Mumbai, Web developer in India, MEAN Stack developer in India, MERN Stack developer in India, Frontend developer in India, Full Stack developer in India"
+          content="Shubham Yadav, Web developer in thane, Web developer in Mumbai, MEAN Stack developer in Thane, MERN Stack developer in Thane, MERN Stack developer in Mumbai, Frontend developer in thane, Frontend developer in Mumbai, Full Stack developer in thane, Full Stack developer in Mumbai, Web developer in India, MEAN Stack developer in India, MERN Stack developer in India, Frontend developer in India, Full Stack developer in India,
+          Web Developer,
+UI Designer,
+Front-end Developer,
+Mumbai, India,
+Responsive Web Design,
+HTML5,
+CSS3,
+JavaScript,
+User Interface (UI),
+User Experience (UX),
+Mobile-First Design,
+Bootstrap,
+React.js,
+Angular,
+Vue.js,
+Web Accessibility,
+Cross-Browser Compatibility,
+Progressive Web Apps (PWAs),
+Animation and Transitions,
+Performance Optimization,
+Wireframing,
+Prototyping,
+Adobe XD,
+Figma,
+Code Quality,
+Version Control (e.g., Git),
+Web Design Trends,
+Portfolio Showcase,
+Project Highlights,
+Client Testimonials,
+Mumbai Skyline (for visual aesthetics),
+Contact Information,
+Skill Set,
+Code Samples,
+GitHub Repository,
+LinkedIn Profile,
+Freelancer/Contractor Availability"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
