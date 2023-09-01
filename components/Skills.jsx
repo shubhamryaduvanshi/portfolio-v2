@@ -18,10 +18,10 @@ const Skills = () => {
       title: "React",
       img: "react.png",
     },
-    {
-      title: "Gatsby",
-      img: "gatsby.png",
-    },
+    // {
+    //   title: "Gatsby",
+    //   img: "gatsby.png",
+    // },
     {
       title: "Next",
       img: "next.png",
@@ -30,10 +30,10 @@ const Skills = () => {
     //   title: "JSX",
     //   img: "jsx.png",
     // },
-    {
-      title: "GraphQL",
-      img: "graphql.png",
-    },
+    // {
+    //   title: "GraphQL",
+    //   img: "graphql.png",
+    // },
     {
       title: "Solid",
       img: "solid.png",
@@ -115,8 +115,11 @@ const Skills = () => {
         <p className="mt-6 text-3xl font-medium max-w-fit">My Skills</p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-8 sm:gap-4 md:gap-10 pt-14 pl-0 md:pl-6">
-          {skillsInfo.map((skill,index) => (
-            <div className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-lg" key={index}>
+          {skillsInfo.map((skill, index) => (
+            <div
+              className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-lg"
+              key={index}
+            >
               <Image
                 src={`/assets/images/skills/${skill.img}`}
                 alt={skill.title}

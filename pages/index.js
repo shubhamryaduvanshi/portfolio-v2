@@ -26,7 +26,7 @@ export default function Home() {
           content="Shubham Yadav, Web developer in thane, Web developer in Mumbai, MEAN Stack developer in Thane, MERN Stack developer in Thane, MERN Stack developer in Mumbai, Frontend developer in thane, Frontend developer in Mumbai, Full Stack developer in thane, Full Stack developer in Mumbai, Web developer in India, MEAN Stack developer in India, MERN Stack developer in India, Frontend developer in India, Full Stack developer in India"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300&display=swap"
           rel="stylesheet"
