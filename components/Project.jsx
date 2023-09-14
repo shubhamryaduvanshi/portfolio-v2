@@ -47,7 +47,8 @@ const Project = ({ project, showProjectDetails }) => {
             alt={project.title}
             height={250}
             width={250}
-            objectFit="contain"
+            objectFit="cover"
+            style={{ borderRadius: "4px" }}
             className={`${
               isHovered
                 ? "scale-110 transition-all duration-300 ease-in-out"

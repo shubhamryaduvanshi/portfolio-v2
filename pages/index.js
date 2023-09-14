@@ -69,7 +69,7 @@ Freelancer/Contractor Availability"
           rel="stylesheet"
         />
       </Head>
-      <div className="font-poppins relative">
+      <div className="font-poppins relative scroll-smooth">
         <Header />
         <Hero />
         <About />
