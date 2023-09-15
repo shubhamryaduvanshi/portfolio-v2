@@ -6,4 +6,3 @@ Allow: /
 User-agent: Googlebot
 Disallow: /nogooglebot/
 
-Sitemap: https://shubhamydv.netlify.app/sitemap.xml
