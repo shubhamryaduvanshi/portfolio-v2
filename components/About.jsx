@@ -35,7 +35,7 @@ const About = () => {
             <div className="w-full px-2 md:max-w-2xl">
               <div className="mt-12 text-gray-600 md:text-md text-justify md:text-left">
                 <p>
-                  I&apos;m currently persuing MCA from Savitribai Phule Pune
+                  I&apos;m currently pursuing MCA from Savitribai Phule Pune
                   University. I&apos;m a Frontend Web Developer based in India.
                   I specialize in building (and occasionally designing)
                   exceptional websites, applications, and everything in between.
