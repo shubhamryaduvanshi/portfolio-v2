@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Work from "../components/Work";
+import Bubbles from "../components/Bubbles";
 export default function Home() {
   return (
     <>
@@ -71,6 +72,7 @@ Freelancer/Contractor Availability"
         <meta name="google-site-verification" content="NXakTCEJyt8LNrTq3FyMv97qG0nm74Wy8sC-MFiPagA" />
       </Head>
       <div className="font-poppins relative scroll-smooth">
+        <div className="fixed -z-20">    <Bubbles />   </div>
         <Header />
         <Hero />
         <About />

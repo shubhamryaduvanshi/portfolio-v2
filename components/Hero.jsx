@@ -1,12 +1,10 @@
 import Typewriter from "typewriter-effect";
 import SocialMedia from "./SocialMedia";
-import Bubbles from "./Bubbles";
 
 const Hero = () => {
   return (
     <>
-      <Bubbles />
-      <div className="flex flex-col max-w-7xl mx-auto pt-56 md:pt-60 pb-60 justify-center items-center">
+      <div className="flex flex-col max-w-7xl mx-auto pt-48 md:pt-60 pb-60 justify-center items-center">
         <p className="text-xs uppercase">
           Let&apos;s make something great together
         </p>

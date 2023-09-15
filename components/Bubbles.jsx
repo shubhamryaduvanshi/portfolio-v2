@@ -2,7 +2,7 @@ import React from "react";
 
 const Bubbles = () => {
   return (
-    <div className="flex flex-none fixed opacity-5 min-h-screen">
+    <div className="flex flex-none opacity-5 ">
       <div className="flex-auto w-32 h-32 pattern-dots pattern-white pattern-bg-transparent pattern-opacity-60 pattern-size-2  rounded-full" />
       <div className="flex-auto w-8 h-8  rounded-full -mx-4 my-1 md:-mx-9 bg-green-700 bg-opacity-50 " />
       <div className="flex-auto w-56 h-56 rounded-full -mx-40 my-16 bg-yellow-500 bg-opacity-50" />
