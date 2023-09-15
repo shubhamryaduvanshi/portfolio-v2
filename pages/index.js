@@ -68,6 +68,7 @@ Freelancer/Contractor Availability"
           href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300&display=swap"
           rel="stylesheet"
         />
+        <meta name="google-site-verification" content="NXakTCEJyt8LNrTq3FyMv97qG0nm74Wy8sC-MFiPagA" />
       </Head>
       <div className="font-poppins relative scroll-smooth">
         <Header />
