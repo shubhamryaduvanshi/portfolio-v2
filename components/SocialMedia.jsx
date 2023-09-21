@@ -1,6 +1,7 @@
 import { FiInstagram } from "react-icons/fi";
 import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const SocialMedia = () => {
   const socials = [
@@ -30,7 +31,15 @@ const SocialMedia = () => {
       {socials.map((social, index) => {
         return (
           <a href={social.link} target="_blank" rel="noreferrer" key={index}>
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                ease: "easeInOut",
+                y: { duration: index + 2 + 0.8 },
+                opacity: { duration: index + 2 + 1 },
+                delay: 3,
+              }}
               key={index}
               className={`flex flex-row items-center 
               justify-center w-10 h-10 rounded-full shadow-xl
@@ -45,7 +54,7 @@ const SocialMedia = () => {
               // hover:bg-blue-500
             >
               {social.icon}
-            </div>
+            </motion.div>
           </a>
         );
       })}
