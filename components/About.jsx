@@ -34,21 +34,23 @@ const About = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
-              delay: 1,
+              delay: 0.1,
             }}
+            viewport={{ once: true }}
             className="uppercase text-blue-600 text-lg"
           >
             About
           </motion.p>
           <motion.p
-            initial={{ opacity: 0, x: -100 }}
+            initial={{ opacity: 0, x: -10 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
               ease: "linear",
               x: { duration: 2 },
               opacity: { duration: 2 },
-              delay: 1,
+              delay: 0.5,
             }}
+            viewport={{ once: true }}
             className="mt-6 text-3xl font-medium"
           >
             Who I Am
@@ -57,14 +59,15 @@ const About = () => {
             <div className="w-full px-2 md:max-w-2xl">
               <div className="mt-12 text-gray-600 md:text-md text-justify md:text-left">
                 <motion.p
-                  initial={{ opacity: 0, x: -50 }}
+                  initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{
                     ease: "linear",
                     x: { duration: 2 },
                     opacity: { duration: 2 },
-                    delay: 1.8,
+                    delay: 1,
                   }}
+                  viewport={{ once: true }}
                 >
                   I&apos;m currently pursuing MCA from Savitribai Phule Pune
                   University. I&apos;m a Frontend Web Developer based in India.
@@ -73,29 +76,31 @@ const About = () => {
                 </motion.p>
 
                 <motion.p
-                  initial={{ opacity: 0, x: -50 }}
+                  initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{
                     ease: "linear",
-                    x: { duration: 2 },
-                    opacity: { duration: 2 },
-                    delay: 2.8,
+                    x: { duration: 1 },
+                    opacity: { duration: 1 },
+                    delay: 1.2,
                   }}
                   className="mt-6"
+                  viewport={{ once: true }}
                 >
                   I enjoy creating things that live on the internet. I&apos;m
                   focused on building responsive front-end web application while
                   learning backend technologies.
                 </motion.p>
                 <motion.p
-                  initial={{ opacity: 0, x: -50 }}
+                  initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{
                     ease: "linear",
-                    x: { duration: 2 },
-                    opacity: { duration: 2 },
-                    delay: 3.5,
+                    x: { duration: 1 },
+                    opacity: { duration: 1 },
+                    delay: 1.3,
                   }}
+                  viewport={{ once: true }}
                   className="mt-6"
                 >
                   My main focus these days is building accessible, inclusive
@@ -106,14 +111,15 @@ const About = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mt-6 md:grid-cols-3">
                   {aboutGrid.map((item) => (
                     <motion.div
-                      initial={{ opacity: 0, x: -50 }}
+                      initial={{ opacity: 0, x: -10 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{
                         ease: "linear",
-                        x: { duration: 2 },
-                        opacity: { duration: 2 },
-                        delay: item.id + 2.8,
+                        x: { duration: 1 },
+                        opacity: { duration: 1 },
+                        delay: item.id + 0.5,
                       }}
+                      viewport={{ once: true }}
                       key={item.id}
                       className="flex items-center mt-4 md:mt-6"
                     >
@@ -132,13 +138,14 @@ const About = () => {
             <motion.div
               className="rounded-full overflow-hidden bg-blue-100 z-0
             mt-10 md:mt-12 md:ml-10 p-2 flex shadow-lg items-center justify-center"
-              initial={{ opacity: 0, x: 50, scale: 0.7 }}
+              initial={{ opacity: 0, x: 10, scale: 0.7 }}
               whileInView={{ opacity: 1, x: 0, scale: 1 }}
               transition={{
                 ease: "linear",
                 duration: 2,
                 x: { duration: 0.5 },
               }}
+              viewport={{ once: true }}
               // viewport={{ once: true }}
             >
               <Image

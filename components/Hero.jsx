@@ -14,8 +14,9 @@ const Hero = () => {
             ease: "linear",
             x: { duration: 1.5 },
             opacity: { duration: 5 },
-            delay: 1,
+            delay: 0.5,
           }}
+          viewport={{ once: true }}
         >
           Let&apos;s make something great together
         </motion.p>
@@ -37,8 +38,9 @@ const Hero = () => {
           transition={{
             ease: "linear",
             opacity: { duration: 2 },
-            delay: 2.8,
+            delay: 1,
           }}
+          viewport={{ once: true }}
           className="text-center text-2xl md:text-4xl font-semibold text-slate-500"
         >
           {/* A Frontend Web DeveloperI build things for the web. */}
@@ -62,8 +64,9 @@ const Hero = () => {
           transition={{
             ease: "linear",
             opacity: { duration: 2 },
-            delay: 3.8,
+            delay: 1.2,
           }}
+          viewport={{ once: true }}
           className="max-w-3xl text-justify md:text-center mt-6 md:mt-8 px-8 md:px-4 text-sm text-gray-600"
         >
           I&apos;m a Web Developer based in India. I specialize in building (and

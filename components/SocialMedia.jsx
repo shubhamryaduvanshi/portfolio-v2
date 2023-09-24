@@ -36,10 +36,11 @@ const SocialMedia = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
                 ease: "easeInOut",
-                y: { duration: index + 2 + 0.8 },
-                opacity: { duration: index + 2 + 1 },
-                delay: 3,
+                y: { duration: index + 1 + 0.8 },
+                opacity: { duration: index + 1 + 1 },
+                delay: 1,
               }}
+              viewport={{ once: true }}
               key={index}
               className={`flex flex-row items-center 
               justify-center w-10 h-10 rounded-full shadow-xl
