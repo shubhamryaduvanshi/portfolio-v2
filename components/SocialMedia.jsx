@@ -27,12 +27,12 @@ const SocialMedia = () => {
     },
   ];
   return (
-    <div className="flex flex-row mt-8 md:mt-12">
+    <div className="flex flex-row mt-8 md:mt-12 justify-center">
       {socials.map((social, index) => {
         return (
           <a href={social.link} target="_blank" rel="noreferrer" key={index}>
             <motion.div
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
                 ease: "easeInOut",

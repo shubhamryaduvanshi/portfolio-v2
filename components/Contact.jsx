@@ -3,6 +3,7 @@ import SocialMedia from "./SocialMedia";
 import { useForm } from "react-hook-form";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { AiFillCloseCircle } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -43,12 +44,44 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="max-w-7xl px-8 mx-auto pt-0 md:pt-10 pb-16 md:pb-20">
-        <p className="uppercase text-blue-600 text-lg">Contact</p>
-        <p className="mt-6 text-3xl font-medium text-center sm:text-left">
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            delay: 0.2,
+          }}
+          viewport={{ once: true }}
+          className="uppercase text-blue-600 text-lg"
+        >
+          Contact
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: -10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            ease: "linear",
+            x: { duration: 1.5 },
+            opacity: { duration: 1.5 },
+            delay: 0.5,
+          }}
+          viewport={{ once: true }}
+          className="mt-6 text-3xl font-medium text-center sm:text-left"
+        >
           Let&apos;s make something great!
-        </p>
+        </motion.p>
         <div className="flex items-center justify-around mt-12 flex-col md:flex-row">
-          <div className=" bg-blue-50 z-0 w-full max-w-md p-4 rounded-md shadow-md md:shadow-xl">
+          <motion.div
+            initial={{ opacity: 0, x: 10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              ease: "linear",
+              x: { duration: 1.5 },
+              opacity: { duration: 1.5 },
+              delay: 0.8,
+            }}
+            viewport={{ once: true }}
+            className=" bg-blue-50 z-0 w-full max-w-md p-4 rounded-md shadow-md md:shadow-xl"
+          >
             <form
               className="flex flex-col items-center justify-center"
               onSubmit={handleSubmit(onSubmit)}
@@ -159,20 +192,31 @@ const Contact = () => {
                 {isLoading ? "Processing..." : " Submit"}
               </button>
             </form>
-          </div>
+          </motion.div>
 
           <div className="flex flex-col max-w-md mt-12 md:mt-0 text-center justify-center items-center">
-            <p className="text-md md:text-xl font-medium">
+            <motion.p
+              initial={{ opacity: 0, x: -10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                ease: "linear",
+                x: { duration: 1.5 },
+                opacity: { duration: 1.5 },
+                delay: 0.8,
+              }}
+              viewport={{ once: true }}
+              className="text-md md:text-xl font-medium"
+            >
               Feel free to reach out through any platforms bellow:
-            </p>
+            </motion.p>
             <div className="mx-auto">
               <SocialMedia />
               <div className="flex flex-col mt-8 border py-1 px-2 border-blue-200 rounded-lg hover:text-blue-700">
                 <a
-                  href="mailto:yshubhamr@gmail.com"
+                  href="mailto:sde.shubham.yadav@gmail.com"
                   className="text-blue-500 hover:text-blue-700"
                 >
-                  yshubhamr@gmail.com
+                  sde.shubham.yadav@gmail.com
                 </a>
               </div>
             </div>

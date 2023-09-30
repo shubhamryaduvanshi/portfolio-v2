@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Project = ({ project, showProjectDetails }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -21,10 +22,17 @@ const Project = ({ project, showProjectDetails }) => {
           } `}
         >
           {isHovered && (
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 5 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                ease: "linear",
+                y: { duration: 1 },
+                opacity: { duration: 2 },
+              }}
               hidden={!isHovered}
               style={{ background: "rgba(0,0,0,0.7)" }}
-              className="absolute bottom-0 left-0 z-10 w-full h-24 rounded-md transition-all duration-500 ease-in-out flex justify-center items-center flex-col"
+              className="absolute bottom-0 left-0 z-10 w-full h-28 rounded-md transition-all duration-500 ease-in-out flex justify-center items-center flex-col"
             >
               <div className="mb-4 text-md font-semibold text-white">
                 {project.title}
@@ -35,7 +43,7 @@ const Project = ({ project, showProjectDetails }) => {
               >
                 View Details
               </button>
-            </div>
+            </motion.div>
             // <div className="absolute top-0 left-0 z-10 w-full h-full transition-all duration-300 ease-in-out bg-blend-overlay bg-blue-200 opacity-60 flex justify-center items-center">
             //   <button className="z-20 px-4 bg-blue-800 opacity-100">
             //     More Info

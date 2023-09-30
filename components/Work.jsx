@@ -1,4 +1,6 @@
-import { BsBoxArrowUpRight, BsCircleFill } from "react-icons/bs";
+import { BsBoxArrowUpRight } from "react-icons/bs";
+import { motion } from "framer-motion";
+
 import parse from "html-react-parser";
 const Work = () => {
   const workInfo = [
@@ -30,57 +32,132 @@ const Work = () => {
   return (
     <section id="work" className="">
       <div className="max-w-7xl px-8 mx-auto pt-10 pb-20">
-        <p className="uppercase text-blue-600 text-lg">Work</p>
-        <p className="mt-6 text-3xl font-medium max-w-fit">Experience</p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            delay: 0.2,
+          }}
+          viewport={{ once: true }}
+          className="uppercase text-blue-600 text-lg"
+        >
+          Work
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: -10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            ease: "linear",
+            x: { duration: 1.5 },
+            opacity: { duration: 1.5 },
+            delay: 0.5,
+          }}
+          viewport={{ once: true }}
+          className="mt-6 text-3xl font-medium max-w-fit"
+        >
+          Experience
+        </motion.p>
 
         <div className="mt-10 ml-0 md:ml-8">
           {workInfo.map((work) => (
-            <div key={work.id} className="mt-10">
-              <div className="flex items-center">
-                <div className="flex flex-col">
-                  <p className="text-xl font-medium">{work.designation}</p>
-                  <a
-                    href={work.website}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-md text-blue-700 flex items-center mt-0.5"
+            <div className="flex items-center" key={work.id}>
+              <div className="flex flex-col">
+                <motion.p
+                  initial={{ opacity: 0, x: -5 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{
+                    ease: "linear",
+                    x: { duration: 2 },
+                    opacity: { duration: 2 },
+                    delay: 1,
+                  }}
+                  viewport={{ once: true }}
+                  key={work.id}
+                  className="text-xl font-medium"
+                >
+                  {work.designation}
+                </motion.p>
+                <motion.a
+                  initial={{ opacity: 0, x: -5 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{
+                    ease: "linear",
+                    x: { duration: 2 },
+                    opacity: { duration: 2 },
+                    delay: 1,
+                  }}
+                  viewport={{ once: true }}
+                  href={work.website}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-md text-blue-700 flex items-center mt-0.5"
+                >
+                  {work.company}{" "}
+                  <BsBoxArrowUpRight className="ml-1 mb-2" size={12} />
+                </motion.a>
+
+                <motion.div
+                  initial={{ opacity: 0, x: -5 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{
+                    ease: "linear",
+                    x: { duration: 2 },
+                    opacity: { duration: 2 },
+                    delay: 1,
+                  }}
+                  viewport={{ once: true }}
+                  className="flex items-center mt-3"
+                >
+                  <p className="text-md text-gray-500">{work.duration}</p>
+                  <span className="mx-2 text-gray-500">|</span>
+                  <p className="text-md text-gray-500">{work.jobType}</p>
+                </motion.div>
+
+                <div className="mt-6">
+                  <motion.p
+                    initial={{ opacity: 0, x: -5 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{
+                      ease: "linear",
+                      x: { duration: 2 },
+                      opacity: { duration: 2 },
+                      delay: 1,
+                    }}
+                    viewport={{ once: true }}
+                    className="text-md text-gray-600 font-medium"
                   >
-                    {work.company}{" "}
-                    <BsBoxArrowUpRight className="ml-1 mb-2" size={12} />
-                  </a>
-
-                  <div className="flex items-center mt-3">
-                    <p className="text-md text-gray-500">{work.duration}</p>
-                    <span className="mx-2 text-gray-500">|</span>
-                    <p className="text-md text-gray-500">{work.jobType}</p>
-                  </div>
-
-                  <div className="mt-6">
-                    <p className="text-md text-gray-600 font-medium">
-                      The key responsibilities are as mentioned below:
-                    </p>
-                    <div className="mt-2">
-                      {work.work.map((work, index) => (
-                        <div
-                          key={index}
-                          className="flex items-start md:items-center mt-3 text-justify md:text-left"
-                        >
-                          {/* <div className="w-2 h-2 bg-gray-600 rounded-full"></div> */}
-                          <div className="mt-0.5 md:mt-0">{index + 1}.</div>
-                          {/* <BsCircleFill
+                    The key responsibilities are as mentioned below:
+                  </motion.p>
+                  <div className="mt-2">
+                    {work.work.map((work, index) => (
+                      <motion.div
+                        initial={{ opacity: 0, x: -10 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{
+                          ease: "linear",
+                          x: { duration: 2 },
+                          opacity: { duration: 2 },
+                          delay: index + 0.6 + 0.4,
+                        }}
+                        viewport={{ once: true }}
+                        key={index}
+                        className="flex items-start md:items-center mt-3 text-justify md:text-left"
+                      >
+                        {/* <div className="w-2 h-2 bg-gray-600 rounded-full"></div> */}
+                        <div className="mt-0.5 md:mt-0">{index + 1}.</div>
+                        {/* <BsCircleFill
                             className="text-gray-600 w-4 h-4"
                             size={8}
                           /> */}
-                          <p className="ml-3 text-gray-500">
-                            {parse(work)}
-                            {/* {work} */}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
+                        <p className="ml-3 text-gray-500">
+                          {parse(work)}
+                          {/* {work} */}
+                        </p>
+                      </motion.div>
+                    ))}
                   </div>
-                  {/* worked div end */}
                 </div>
+                {/* worked div end */}
               </div>
             </div>
           ))}

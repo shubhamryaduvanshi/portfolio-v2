@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Skills = () => {
@@ -111,12 +112,44 @@ const Skills = () => {
   return (
     <section id="skills" className="">
       <div className="max-w-7xl px-8 mx-auto pt-10 pb-32">
-        <p className="uppercase text-blue-600 text-lg">Skills</p>
-        <p className="mt-6 text-3xl font-medium max-w-fit">My Skills</p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            delay: 0.2,
+          }}
+          viewport={{ once: true }}
+          className="uppercase text-blue-600 text-lg"
+        >
+          Skills
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: -10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            ease: "linear",
+            x: { duration: 1.5 },
+            opacity: { duration: 1.5 },
+            delay: 0.5,
+          }}
+          viewport={{ once: true }}
+          className="mt-6 text-3xl font-medium max-w-fit"
+        >
+          My Skills
+        </motion.p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-8 sm:gap-4 md:gap-10 pt-14 pl-0 md:pl-6">
           {skillsInfo.map((skill, index) => (
-            <div
+            <motion.div
+              initial={{ opacity: 0, x: -5 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                ease: "linear",
+                x: { duration: 2 },
+                opacity: { duration: 2 },
+                delay: index + 0.4 + 0.3,
+              }}
+              viewport={{ once: true }}
               className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-lg"
               key={index}
             >
@@ -130,7 +163,7 @@ const Skills = () => {
               <p className="mt-4 text-md md:text-lg font-medium">
                 {skill.title}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
