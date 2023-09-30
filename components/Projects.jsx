@@ -5,22 +5,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const Projects = () => {
-  // {
-  //   "id": 1,
-  //   "title": "Image Hub",
-  //   "bannerImage": "/assets/images/projects/imageHub/poster.png",
-  //   "description": "Image Hub is a web application that allows users to download images. Images can be downloaded in different sizes.",
-  //   "gitHubLink": "https://github.com/shubhamryaduvanshi/Image-Hub",
-  //   "techStack": ["Solid JS", "Tailwind CSS", "Unsplash API"],
-  //   "linkText": "View on Github",
-  //   "liveUrl": "https://image-hub-by-shubham.netlify.app/",
-  //   "projectScreenShots": [
-  //     "imageHub/image-1.png",
-  //     "imageHub/image-2.png",
-  //     "imageHub/image-3.png",
-  //     "imageHub/image-4.png"
-  //   ]
-  // },
   const [showDialog, setShowDialog] = useState(false);
   const [activeProject, setActiveProject] = useState(null);
 

@@ -1,6 +1,22 @@
 [
   {
     "id": 1,
+    "title": "Image Hub",
+    "bannerImage": "/assets/images/projects/imageHub/poster.png",
+    "description": "Image Hub is a web application that allows users to download images. Images can be downloaded in different sizes.",
+    "gitHubLink": "https://github.com/shubhamryaduvanshi/Image-Hub",
+    "techStack": ["Solid JS", "Tailwind CSS", "Unsplash API"],
+    "linkText": "View on Github",
+    "liveUrl": "https://image-hub-by-shubham.netlify.app/",
+    "projectScreenShots": [
+      "imageHub/image-1.png",
+      "imageHub/image-2.png",
+      "imageHub/image-3.png",
+      "imageHub/image-4.png"
+    ]
+  },
+  {
+    "id": 2,
     "title": "Pokedex App",
     "bannerImage": "/assets/images/projects/pokedex/poster.png",
     "description": "A Pokedex app that allows you to search for Pokemon and view their stats.",
@@ -15,7 +31,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Git Search",
     "bannerImage": "/assets/images/projects/gitSearch/poster.png",
     "description": "A Github user search app that allows you to search for Github users and view their profile.",
