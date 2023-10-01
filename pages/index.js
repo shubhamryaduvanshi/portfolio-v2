@@ -8,6 +8,7 @@ import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Work from "../components/Work";
 import Bubbles from "../components/Bubbles";
+import Script from "next/script";
 export default function Home() {
   return (
     <>
@@ -84,14 +85,18 @@ Fullstack developer near mumbai
           rel="stylesheet"
         />
         <meta name="google-site-verification" content="NXakTCEJyt8LNrTq3FyMv97qG0nm74Wy8sC-MFiPagA" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QM5CZCE15J"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
-          gtag('config', 'G-QM5CZCE15J');
-        </script>
+
       </Head>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QM5CZCE15J"></Script>
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-QM5CZCE15J');
+        `}
+      </Script>
       <div className="font-poppins relative scroll-smooth">
         <div className="fixed -z-20">    <Bubbles />   </div>
         <Header />
