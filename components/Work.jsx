@@ -101,8 +101,8 @@ const Work = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{
                     ease: "linear",
-                    x: { duration: 2 },
-                    opacity: { duration: 2 },
+                    x: { duration: 1 },
+                    opacity: { duration: 1 },
                     delay: 1,
                   }}
                   viewport={{ once: true }}
@@ -135,9 +135,9 @@ const Work = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{
                           ease: "linear",
-                          x: { duration: 2 },
-                          opacity: { duration: 2 },
-                          delay: index + 0.6 + 0.4,
+                          x: { duration: 0.8 },
+                          opacity: { duration: 0.5 },
+                          delay: index - 0.5,
                         }}
                         viewport={{ once: true }}
                         key={index}

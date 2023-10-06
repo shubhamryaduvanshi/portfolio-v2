@@ -117,7 +117,7 @@ const About = () => {
                         ease: "linear",
                         x: { duration: 1 },
                         opacity: { duration: 1 },
-                        delay: item.id + 0.5,
+                        delay: item.id + 0.2,
                       }}
                       viewport={{ once: true }}
                       key={item.id}

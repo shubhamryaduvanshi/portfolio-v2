@@ -147,7 +147,7 @@ const Skills = () => {
                 ease: "linear",
                 x: { duration: 2 },
                 opacity: { duration: 2 },
-                delay: index + 0.4 + 0.3,
+                // delay: index - 0.2,
               }}
               viewport={{ once: true }}
               className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-lg"
