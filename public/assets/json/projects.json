@@ -1,18 +1,18 @@
 [
   {
     "id": 1,
-    "title": "Image Hub",
-    "bannerImage": "/assets/images/projects/imageHub/poster.png",
-    "description": "Image Hub is a web application that allows users to download images. Images can be downloaded in different sizes.",
-    "gitHubLink": "https://github.com/shubhamryaduvanshi/Image-Hub",
-    "techStack": ["Solid JS", "Tailwind CSS", "Unsplash API"],
-    "linkText": "View on Github",
-    "liveUrl": "https://image-hub-by-shubham.netlify.app/",
+    "title": "Share The Task",
+    "bannerImage": "/assets/images/projects/sharethetask/poster.png",
+    "description": "'Share the Task' is a versatile project management web application designed to streamline and enhance project collaboration and task management. This platform empowers teams to efficiently create and manage tickets, oversee project progress, and organize user roles and responsibilities.",
+    "gitHubLink": "",
+    "techStack": ["React JS", "Chakra UI", "Django"],
+    "isPublicRepository": false,
+    "liveUrl": "https://www.sharethetask.com/",
     "projectScreenShots": [
-      "imageHub/image-1.png",
-      "imageHub/image-2.png",
-      "imageHub/image-3.png",
-      "imageHub/image-4.png"
+      "sharethetask/image-1.jpg",
+      "sharethetask/image-2.jpg",
+      "sharethetask/image-3.jpg",
+      "sharethetask/image-4.png"
     ]
   },
   {
@@ -22,7 +22,7 @@
     "description": "A Pokedex app that allows you to search for Pokemon and view their stats.",
     "gitHubLink": "https://github.com/shubhamryaduvanshi/pokedex",
     "techStack": ["Next JS", "Tailwind CSS", "PokeAPI"],
-    "linkText": "View on Github",
+    "isPublicRepository": true,
     "liveUrl": "https://my-pokedex-web.vercel.app/",
     "projectScreenShots": [
       "pokedex/Image-1.png",
@@ -37,13 +37,29 @@
     "description": "A Github user search app that allows you to search for Github users and view their profile.",
     "techStack": ["Solid JS", "Tailwind CSS", "Github API"],
     "gitHubLink": "https://github.com/shubhamryaduvanshi/GitSearch",
-    "linkText": "View on Github",
+    "isPublicRepository": true,
     "liveUrl": "https://gitsearchbyshubham.netlify.app/",
     "projectScreenShots": [
       "gitSearch/image-1.png",
       "gitSearch/image-2.png",
       "gitSearch/image-3.png",
       "gitSearch/image-4.png"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Image Hub",
+    "bannerImage": "/assets/images/projects/imageHub/poster.png",
+    "description": "Image Hub is a web application that allows users to download images. Images can be downloaded in different sizes.",
+    "gitHubLink": "https://github.com/shubhamryaduvanshi/Image-Hub",
+    "techStack": ["Solid JS", "Tailwind CSS", "Unsplash API"],
+    "isPublicRepository": true,
+    "liveUrl": "https://image-hub-by-shubham.netlify.app/",
+    "projectScreenShots": [
+      "imageHub/image-1.png",
+      "imageHub/image-2.png",
+      "imageHub/image-3.png",
+      "imageHub/image-4.png"
     ]
   }
 ]

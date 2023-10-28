@@ -97,15 +97,17 @@ const Dialog = ({ projectInfo, closeDialog }) => {
                           View Live
                         </a>
                         {/* create a button to view the live project */}
-                        <a
-                          href={projectInfo.gitHubLink}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="bg-slate-700 hover:bg-black cursor-pointer text-white py-1 px-2 rounded flex items-center justify-center gap-2"
-                        >
-                          <BsGithub />
-                          View Code
-                        </a>
+                        {projectInfo.isPublicRepository && (
+                          <a
+                            href={projectInfo.gitHubLink}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="bg-slate-700 hover:bg-black cursor-pointer text-white py-1 px-2 rounded flex items-center justify-center gap-2"
+                          >
+                            <BsGithub />
+                            View Code
+                          </a>
+                        )}
                         {/* create a button to view the code */}
                       </div>
                     </div>
