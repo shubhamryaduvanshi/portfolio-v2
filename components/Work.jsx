@@ -6,7 +6,7 @@ const Work = () => {
   const workInfo = [
     {
       id: 1,
-      designation: "Jr. Software Developer",
+      designation: "Software Developer",
       company: "Kuchnaya Technolabs Pvt. Ltd.",
       duration: "May 2021 - Present",
       website: "https://kuchnaya.com/",
@@ -137,7 +137,7 @@ const Work = () => {
                           ease: "linear",
                           x: { duration: 0.8 },
                           opacity: { duration: 0.5 },
-                          delay: index - 0.5,
+                          delay: index / 3 - 0.5,
                         }}
                         viewport={{ once: true }}
                         key={index}

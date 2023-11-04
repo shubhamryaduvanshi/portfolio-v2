@@ -43,7 +43,7 @@ const Projects = () => {
             ease: "linear",
             x: { duration: 1.5 },
             opacity: { duration: 1.5 },
-            delay: 0.5,
+            delay: 0.2,
           }}
           viewport={{ once: true }}
           className="mt-6 text-2xl sm:text-3xl font-medium max-w-fit"
@@ -59,7 +59,7 @@ const Projects = () => {
                 ease: "linear",
                 x: { duration: 2 },
                 opacity: { duration: 2 },
-                delay: project.id - 0.3,
+                delay: project.id / 2 - 0.3,
               }}
               viewport={{ once: true }}
               key={project.id}

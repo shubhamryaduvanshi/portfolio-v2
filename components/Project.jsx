@@ -56,6 +56,7 @@ const Project = ({ project, showProjectDetails }) => {
             height={250}
             width={250}
             objectFit="cover"
+            priority={false}
             style={{ borderRadius: "4px" }}
             className={`${
               isHovered
