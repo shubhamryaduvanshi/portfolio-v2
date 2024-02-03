@@ -44,12 +44,16 @@ const SocialMedia = () => {
               key={index}
               className={`flex flex-row items-center 
               justify-center w-10 h-10 rounded-full shadow-xl
-             mr-4 cursor-pointer
+              mr-4 cursor-pointer
               transition duration-500 ease-in-out
               text-gray-600
               text-xl
               hover:text-2xl
               hover:font-bold
+              hover:border-none
+              dark:border
+              dark:text-slate-300
+              dark:border-slate-700
               ${social.class}
               `}
               // hover:bg-blue-500

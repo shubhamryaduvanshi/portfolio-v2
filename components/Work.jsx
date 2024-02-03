@@ -12,26 +12,26 @@ const Work = () => {
       website: "https://kuchnaya.com/",
       jobType: "Full Time",
       work: [
-        "Worked on a hunt booking web app. Primarily focused on creating reusable react components, multi-device responsiveness, partial payment feature, form validation, and SEO using <span class='highLightText'> GraphQL, Gatsby, Chakra UI,</span> and <span class='highLightText'>React Helmet.</span>",
+        "Worked on a hunt booking web app. Primarily focused on creating reusable react components, multi-device responsiveness, partial payment feature, form validation, and SEO using <span className='font-medium text-slate-800 dark:text-slate-300'> GraphQL, Gatsby, Chakra UI,</span> and <span className='font-medium text-slate-800 dark:text-slate-300'>React Helmet.</span>",
         // "Worked on Figma plugin that generates proper JSON structure for Lottie files using React.",
         // "Worked on the home page for auropay.net using Next JS.",
-        "Created reusable components and integrated stripe payment gateway for vidyback.com using <span class='highLightText'> React, Chakra UI, NodeJS </span> and <span class='highLightText'> Express. </span>",
+        "Created reusable components and integrated stripe payment gateway for vidyback.com using <span className='font-medium text-slate-800 dark:text-slate-300'> React, Chakra UI, NodeJS </span> and <span className='font-medium text-slate-800 dark:text-slate-300'> Express. </span>",
         // "JSON driven dynamic form integration using React App.",
-        " Designed and developed an <span class='highLightText'>embed-able checkout</span> widget with multiple client-side <span class='highLightText'> customizations </span>, end-to-end<span class='highLightText'> encryption</span> and validation in <span class='highLightText'> Vanilla JS </span>, similar to <span class='highLightText'> Stripe </span>elements.",
-        " Developed embed-able checkout <span class='highLightText'>widget configuration </span>dashboard (where the merchant/admin can configure the form, pay button, header, footer, payment options, and theme) in the <span class='highLightText'> Angular</span> web app.",
+        " Designed and developed an <span className='font-medium text-slate-800 dark:text-slate-300'>embed-able checkout</span> widget with multiple client-side <span className='font-medium text-slate-800 dark:text-slate-300'> customizations </span>, end-to-end<span className='font-medium text-slate-800 dark:text-slate-300'> encryption</span> and validation in <span className='font-medium text-slate-800 dark:text-slate-300'> Vanilla JS </span>, similar to <span className='font-medium text-slate-800 dark:text-slate-300'> Stripe </span>elements.",
+        " Developed embed-able checkout <span className='font-medium text-slate-800 dark:text-slate-300'>widget configuration </span>dashboard (where the merchant/admin can configure the form, pay button, header, footer, payment options, and theme) in the <span className='font-medium text-slate-800 dark:text-slate-300'> Angular</span> web app.",
 
-        " Developed an embed-able <span class='highLightText'>invoice pay </span>widget with end-to-end <span class='highLightText'> encryption </span>, multiple client-side <span class='highLightText'> customizations </span> and validation using <span class='highLightText'> Solid JS </span>from POC to Production. ",
+        " Developed an embed-able <span className='font-medium text-slate-800 dark:text-slate-300'>invoice pay </span>widget with end-to-end <span className='font-medium text-slate-800 dark:text-slate-300'> encryption </span>, multiple client-side <span className='font-medium text-slate-800 dark:text-slate-300'> customizations </span> and validation using <span className='font-medium text-slate-800 dark:text-slate-300'> Solid JS </span>from POC to Production. ",
 
-        " Developed an embed-able invoice pay widget<span class='highLightText'> configuration </span> dashboard (where the merchant/admin can configure the searchable fields, pay button, header, footer, payment options, and color scheme selector) in the <span class='highLightText'> Angular</span> web app.",
-        " Developed an <span class='highLightText'>Invoice Pay</span> using Solid JS from Scratch.",
-        " Worked on several other features in <span class='highLightText'>payments domain.</span>",
+        " Developed an embed-able invoice pay widget<span className='font-medium text-slate-800 dark:text-slate-300'> configuration </span> dashboard (where the merchant/admin can configure the searchable fields, pay button, header, footer, payment options, and color scheme selector) in the <span className='font-medium text-slate-800 dark:text-slate-300'> Angular</span> web app.",
+        " Developed an <span className='font-medium text-slate-800 dark:text-slate-300'>Invoice Pay</span> using Solid JS from Scratch.",
+        " Worked on several other features in <span className='font-medium text-slate-800 dark:text-slate-300'>payments domain.</span>",
       ],
     },
   ];
 
   return (
     <section id="work" className="">
-      <div className="max-w-7xl px-8 mx-auto pt-10 pb-20">
+      <div className="max-w-7xl px-8 mx-auto pt-10 pb-20 dark:text-slate-400">
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -53,7 +53,7 @@ const Work = () => {
             delay: 0.5,
           }}
           viewport={{ once: true }}
-          className="mt-6 text-3xl font-medium max-w-fit"
+          className="mt-6 text-3xl font-medium max-w-fit dark:text-slate-400"
         >
           Experience
         </motion.p>
@@ -73,7 +73,7 @@ const Work = () => {
                   }}
                   viewport={{ once: true }}
                   key={work.id}
-                  className="text-xl font-medium"
+                  className="text-xl font-medium dark:text-slate-400"
                 >
                   {work.designation}
                 </motion.p>
@@ -106,11 +106,11 @@ const Work = () => {
                     delay: 1,
                   }}
                   viewport={{ once: true }}
-                  className="flex items-center mt-3"
+                  className="flex items-center mt-3 text-gray-500 dark:text-slate-400"
                 >
-                  <p className="text-md text-gray-500">{work.duration}</p>
-                  <span className="mx-2 text-gray-500">|</span>
-                  <p className="text-md text-gray-500">{work.jobType}</p>
+                  <p className="text-md ">{work.duration}</p>
+                  <span className="mx-2">|</span>
+                  <p className="text-md">{work.jobType}</p>
                 </motion.div>
 
                 <div className="mt-6">
@@ -124,7 +124,7 @@ const Work = () => {
                       delay: 1,
                     }}
                     viewport={{ once: true }}
-                    className="text-md text-gray-600 font-medium"
+                    className="text-md text-gray-600 font-medium dark:text-gray-400"
                   >
                     The key responsibilities are as mentioned below:
                   </motion.p>
@@ -149,7 +149,7 @@ const Work = () => {
                             className="text-gray-600 w-4 h-4"
                             size={8}
                           /> */}
-                        <p className="ml-3 text-gray-500">
+                        <p className="ml-3 text-gray-500 dark:text-slate-400">
                           {parse(work)}
                           {/* {work} */}
                         </p>

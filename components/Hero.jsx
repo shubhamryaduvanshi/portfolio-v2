@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <>
-      <div className="flex flex-col max-w-7xl mx-auto pt-48 md:pt-60 pb-60 justify-center items-center">
+    <section id="home">
+      <div className="flex flex-col max-w-7xl mx-auto pt-48 md:pt-40 pb-60 justify-center items-center">
         <motion.p
-          className="text-xs uppercase"
+          className="text-xs uppercase dark:text-slate-400"
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
@@ -29,7 +29,7 @@ const Hero = () => {
             opacity: { duration: 1 },
           }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold text-gray-600 pt-3 md:pt-4 pb-3 md:pb-6 "
+          className="text-3xl md:text-4xl font-bold text-gray-600 dark:text-slate-200 pt-3 md:pt-4 pb-3 md:pb-6 "
         >
           Hi, I&apos;m <span className="text-blue-600">Shubham</span>
         </motion.h1>
@@ -42,9 +42,8 @@ const Hero = () => {
             delay: 1,
           }}
           viewport={{ once: true }}
-          className="text-center text-2xl md:text-4xl font-semibold text-slate-500"
+          className="text-center text-2xl md:text-4xl font-semibold text-slate-500 dark:text-slate-400"
         >
-          {/* A Frontend Web DeveloperI build things for the web. */}
           <Typewriter
             options={{
               strings: [
@@ -68,17 +67,17 @@ const Hero = () => {
             delay: 1.2,
           }}
           viewport={{ once: true }}
-          className="max-w-3xl text-justify md:text-center mt-6 md:mt-8 px-8 md:px-4 text-sm text-gray-600"
+          className="max-w-3xl text-justify md:text-center mt-6 md:mt-8 px-8 md:px-4 text-md text-gray-600 dark:text-slate-400"
         >
-          I&apos;m a Web Developer based in India. I specialize in building (and
-          occasionally designing) exceptional websites, applications, and
-          everything in between.
+          I am a Web Developer located in India, with expertise in crafting
+          outstanding websites and applications. My skills extend to both
+          development and occasional design work.
         </motion.h2>
 
         {/* social media icons */}
         <SocialMedia />
       </div>
-    </>
+    </section>
   );
 };
 

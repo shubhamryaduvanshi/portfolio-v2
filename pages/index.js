@@ -1,14 +1,6 @@
 import Head from "next/head";
-import About from "../components/About";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import Projects from "../components/Projects";
-import Skills from "../components/Skills";
-import Work from "../components/Work";
-import Bubbles from "../components/Bubbles";
 import Script from "next/script";
+import Container from "./Container";
 export default function Home() {
   return (
     <>
@@ -97,17 +89,7 @@ Fullstack developer near mumbai
           gtag('config', 'G-QM5CZCE15J');
         `}
       </Script>
-      <div className="font-poppins relative scroll-smooth">
-        <div className="fixed -z-20">    <Bubbles />   </div>
-        <Header />
-        <Hero />
-        <About />
-        <Work />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
+      <Container />
     </>
   );
 }

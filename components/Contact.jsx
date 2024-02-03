@@ -65,7 +65,7 @@ const Contact = () => {
             delay: 0.5,
           }}
           viewport={{ once: true }}
-          className="mt-6 text-3xl font-medium text-center sm:text-left"
+          className="mt-6 text-3xl font-medium text-center sm:text-left dark:text-slate-400"
         >
           Let&apos;s make something great!
         </motion.p>
@@ -80,20 +80,23 @@ const Contact = () => {
               delay: 0.8,
             }}
             viewport={{ once: true }}
-            className=" bg-blue-50 z-0 w-full max-w-md p-4 rounded-md shadow-md md:shadow-xl"
+            className=" bg-blue-50 dark:bg-slate-700 z-0 w-full max-w-md p-4 rounded-md shadow-md md:shadow-xl"
           >
             <form
               className="flex flex-col items-center justify-center"
               onSubmit={handleSubmit(onSubmit)}
             >
               <div className="flex flex-col w-full px-0 sm:px-4 py-2 my-0 sm:my-1 ">
-                <label htmlFor="visitor" className="text-gray-600">
+                <label
+                  htmlFor="visitor"
+                  className="text-gray-600 dark:text-slate-400"
+                >
                   Name <span className="text-red-400">*</span>
                 </label>
                 <input
                   type="text"
                   id="visitor"
-                  className="px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-600"
+                  className="px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-600 dark:bg-slate-300"
                   {...register("name", {
                     required: "Name is required.",
                     minLength: {
@@ -103,19 +106,22 @@ const Contact = () => {
                   })}
                 />
                 {errors.name && (
-                  <div className="text-sm mt-1 text-red-400">
+                  <div className="text-sm mt-1 text-red-500">
                     {errors.name.message}{" "}
                   </div>
                 )}
               </div>
               <div className="flex flex-col w-full px-0 sm:px-4 py-2 my-0 sm:my-1 ">
-                <label htmlFor="email" className="text-gray-600">
+                <label
+                  htmlFor="email"
+                  className="text-gray-600 dark:text-slate-400"
+                >
                   Email <span className="text-red-400">*</span>
                 </label>
                 <input
                   name="reply_to"
                   id="email"
-                  className="px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-600"
+                  className="px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-600 dark:bg-slate-300"
                   {...register("email", {
                     required: "Email is required.",
                     pattern: {
@@ -125,20 +131,23 @@ const Contact = () => {
                   })}
                 />
                 {errors.email && (
-                  <div className="text-sm mt-1 text-red-400">
+                  <div className="text-sm mt-1 text-red-500">
                     {errors.email.message}
                   </div>
                 )}
               </div>
               <div className="flex flex-col w-full px-0 sm:px-4 py-2 my-0 sm:my-1 ">
-                <label htmlFor="message" className="text-gray-600">
+                <label
+                  htmlFor="message"
+                  className="text-gray-600 dark:text-slate-400"
+                >
                   Message <span className="text-red-400">*</span>
                 </label>
                 <textarea
                   name="message"
                   id="message"
                   rows="5"
-                  className="px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-600"
+                  className="px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-600 dark:bg-slate-300"
                   {...register("message", {
                     required: "Message is required.",
                     minLength: {
@@ -148,7 +157,7 @@ const Contact = () => {
                   })}
                 ></textarea>
                 {errors.message && (
-                  <div className="text-sm mt-1 text-red-400">
+                  <div className="text-sm mt-1 text-red-500">
                     {errors.message.message}
                   </div>
                 )}
@@ -168,7 +177,7 @@ const Contact = () => {
               )}
               <button
                 type="submit"
-                className="px-8 py-2 mt-6 text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700"
+                className="px-8 py-2 mt-6 text-white dark:text-slate-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700"
               >
                 {isLoading && (
                   <svg
@@ -205,13 +214,13 @@ const Contact = () => {
                 delay: 0.8,
               }}
               viewport={{ once: true }}
-              className="text-md md:text-xl font-medium"
+              className="text-md md:text-xl font-medium dark:text-slate-400"
             >
               Feel free to reach out through any platforms bellow:
             </motion.p>
             <div className="mx-auto">
               <SocialMedia />
-              <div className="flex flex-col mt-8 border py-1 px-2 border-blue-200 rounded-lg hover:text-blue-700">
+              <div className="flex flex-col mt-8 border py-1 px-2 border-blue-200 rounded-lg dark:border-slate-600 hover:text-blue-700">
                 <a
                   href="mailto:sde.shubham.yadav@gmail.com"
                   className="text-blue-500 hover:text-blue-700"

@@ -17,8 +17,10 @@ const Project = ({ project, showProjectDetails }) => {
         className="flex w-60 h-60 mx-auto"
       >
         <div
-          className={`h-full w-full overflow-hidden transition delay-50 relative rounded-md p-2 ${
-            isHovered ? "border border-blue-400" : "border"
+          className={`h-full w-full overflow-hidden transition dark:bg-slate-700 delay-50 relative rounded-md p-2 ${
+            isHovered
+              ? "border border-blue-400"
+              : "border dark:border-slate-700"
           } `}
         >
           {isHovered && (

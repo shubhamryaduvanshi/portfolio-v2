@@ -22,7 +22,7 @@ const About = () => {
       id: 3,
       icon: <GiHobbitDwelling size={20} />,
       title: "Hobbies",
-      text: "Coding, Sketching",
+      text: "Travelling, Sketching",
     },
   ];
 
@@ -51,13 +51,13 @@ const About = () => {
               delay: 0.5,
             }}
             viewport={{ once: true }}
-            className="mt-6 text-3xl font-medium"
+            className="mt-6 text-3xl font-medium dark:text-slate-400"
           >
             Who I Am
           </motion.p>
           <div className="flex items-center justify-around flex-col-reverse md:flex-row">
             <div className="w-full px-2 md:max-w-2xl">
-              <div className="mt-12 text-gray-600 md:text-md text-justify md:text-left">
+              <div className="mt-12 text-gray-600 md:text-md text-justify md:text-left dark:text-slate-400">
                 <motion.p
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -69,10 +69,10 @@ const About = () => {
                   }}
                   viewport={{ once: true }}
                 >
-                  I&apos;m currently pursuing MCA from Savitribai Phule Pune
-                  University. I&apos;m a Frontend Web Developer based in India.
-                  I specialize in building (and occasionally designing)
-                  exceptional websites, applications, and everything in between.
+                  I&apos;m currently enrolled in the MCA program at Savitribai
+                  Phule Pune University. As a Frontend Web Developer based in
+                  India, my expertise lies in crafting outstanding websites and
+                  applications, with occasional design work.
                 </motion.p>
 
                 <motion.p
@@ -87,9 +87,10 @@ const About = () => {
                   className="mt-6"
                   viewport={{ once: true }}
                 >
-                  I enjoy creating things that live on the internet. I&apos;m
-                  focused on building responsive front-end web application while
-                  learning backend technologies.
+                  My passion lies in creating digital entities that thrive on
+                  the internet. I am dedicated to constructing responsive
+                  front-end web applications and concurrently expanding my
+                  knowledge in backend technologies.
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, x: -10 }}
@@ -103,9 +104,9 @@ const About = () => {
                   viewport={{ once: true }}
                   className="mt-6"
                 >
-                  My main focus these days is building accessible, inclusive
-                  products and digital experiences at Kuchnaya Technolabs for a
-                  variety of clients.
+                  Presently, my primary emphasis is on developing accessible and
+                  inclusive products, along with enhancing digital experiences
+                  for diverse clients at Kuchnaya Technolabs.
                 </motion.p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mt-6 md:grid-cols-3">
@@ -123,12 +124,17 @@ const About = () => {
                       key={item.id}
                       className="flex items-center mt-4 md:mt-6"
                     >
-                      <div className="flex items-center justify-center w-10 h-10 mr-4 text-white bg-blue-300 rounded-full">
+                      <div
+                        className="flex items-center justify-center w-10 h-10 mr-4 text-white bg-blue-300 rounded-full
+                        dark:backdrop-blur-sm dark:bg-white/30 dark:text-slate-100"
+                      >
                         {item.icon}
                       </div>
                       <div className="flex flex-col">
                         <p className="text-md font-medium">{item.title}</p>
-                        <p className="text-gray-600 text-sm">{item.text}</p>
+                        <p className="text-gray-600 text-sm dark:text-slate-400">
+                          {item.text}
+                        </p>
                       </div>
                     </motion.div>
                   ))}
@@ -136,8 +142,7 @@ const About = () => {
               </div>
             </div>
             <motion.div
-              className="rounded-full overflow-hidden bg-blue-100 z-0
-            mt-10 md:mt-12 md:ml-10 p-2 flex shadow-lg items-center justify-center"
+              className="rounded-full overflow-hidden bg-blue-100 z-0 mt-10 md:mt-12 md:ml-10 p-2 flex shadow-lg items-center justify-center dark:bg-white/10"
               initial={{ opacity: 0, x: 10, scale: 0.7 }}
               whileInView={{ opacity: 1, x: 0, scale: 1 }}
               transition={{

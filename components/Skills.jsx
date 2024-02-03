@@ -133,7 +133,7 @@ const Skills = () => {
             delay: 0.5,
           }}
           viewport={{ once: true }}
-          className="mt-6 text-3xl font-medium max-w-fit"
+          className="mt-6 text-3xl font-medium max-w-fit dark:text-slate-400"
         >
           My Skills
         </motion.p>
@@ -150,7 +150,9 @@ const Skills = () => {
                 // delay: index - 0.2,
               }}
               viewport={{ once: true }}
-              className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-lg"
+              className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-lg
+                dark:bg-slate-700 dark:text-slate-400
+              "
               key={index}
             >
               <Image

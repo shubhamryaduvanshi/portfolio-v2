@@ -6,9 +6,8 @@ body {
   scroll-behavior: smooth;
 }
 
-.highLightText {
-  color: rgb(71 71 71);
-  font-weight: 500;
+html {
+  scroll-padding-top: 120px; /* height of your navbar */
 }
 
 .githubIcon:hover {
@@ -35,4 +34,10 @@ body {
 .twitterIcon:hover {
   color: #fff;
   background-color: #1da1f2;
+}
+
+.active-scroll-spy {
+  border-bottom: 1px solid dodgerblue;
+  transition: all 1s ease;
+  opacity: 1;
 }

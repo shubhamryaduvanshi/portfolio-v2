@@ -26,12 +26,12 @@ const Dialog = ({ projectInfo, closeDialog }) => {
             aria-modal="true"
             aria-labelledby="modal-headline"
           >
-            <div className="bg-white px-4 pt-3 sm:pt-5 pb-4 sm:p-6 sm:pb-4">
+            <div className="bg-white dark:bg-slate-800 dark:text-slate-400 px-4 pt-3 sm:pt-5 pb-4 sm:p-6 sm:pb-4">
               <div className="sm:flex sm:items-start">
                 <div className="mt-3 sm:mt-0 sm:ml-4 text-left">
-                  <div className="flex justify-between border-b-2 border-gray-200 pb-2">
+                  <div className="flex justify-between border-b-2 border-gray-200 dark:border-slate-500 pb-2">
                     <h3
-                      className="text-lg leading-6 font-medium text-gray-900 "
+                      className="text-lg leading-6 font-medium text-gray-900 dark:text-slate-400"
                       id="modal-headline"
                     >
                       {projectInfo.title}
@@ -66,8 +66,8 @@ const Dialog = ({ projectInfo, closeDialog }) => {
                       ))}
                     </Carousel>
 
-                    <p className="text-sm mt-6 text-gray-500">
-                      <span className="font-medium text-slate-600">
+                    <p className="text-sm mt-6 text-gray-500 dark:text-slate-400">
+                      <span className="font-medium text-slate-600 dark:text-slate-400">
                         About :{" "}
                       </span>
                       {projectInfo.description}
@@ -78,7 +78,7 @@ const Dialog = ({ projectInfo, closeDialog }) => {
                       <div className="mt-2 flex flex-col md:flex-row items-center justify-center gap-1 sm:gap-3 px-12">
                         {projectInfo.techStack.map((tech, index) => (
                           <span
-                            className="ml-2 text-sm text-slate-600 text-center bg-blue-100 rounded-sm px-3 py-1 font-light w-full md:w-auto"
+                            className="ml-2 text-sm text-slate-600 text-center bg-blue-100 dark:bg-slate-600 dark:text-slate-400 rounded-sm px-3 py-1 font-light w-full md:w-auto"
                             key={index}
                           >
                             {tech}

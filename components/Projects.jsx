@@ -23,7 +23,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="">
+    <section id="projects">
       <div className="max-w-7xl px-8 mx-auto pt-10 pb-32">
         <motion.p
           initial={{ opacity: 0 }}
@@ -46,7 +46,7 @@ const Projects = () => {
             delay: 0.2,
           }}
           viewport={{ once: true }}
-          className="mt-6 text-2xl sm:text-3xl font-medium max-w-fit"
+          className="mt-6 text-2xl sm:text-3xl font-medium max-w-fit dark:text-slate-400"
         >
           Personal Projects
         </motion.p>
@@ -76,7 +76,7 @@ const Projects = () => {
           <Dialog projectInfo={activeProject} closeDialog={closeDialog} />
         )}
       </div>
-    </div>
+    </section>
   );
 };
 
