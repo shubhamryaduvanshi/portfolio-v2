@@ -13,11 +13,11 @@ import ScrollSpy from "react-ui-scrollspy";
 const Container = () => {
   return (
     <div className="font-poppins relative scroll-smooth bg-white dark:bg-slate-800">
-      <div className="fixed -z-20">
-        {" "}
-        <Bubbles />{" "}
-      </div>
+      <div className="fixed -z-20"> </div>
       <Header />
+      <div className="fixed">
+        <Bubbles />
+      </div>
       <ScrollSpy scrollThrottle={100} useBoxMethod={false}>
         <Hero />
         <About />

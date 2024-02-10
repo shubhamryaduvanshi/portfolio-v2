@@ -61,7 +61,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="shadow-lg w-full sticky z-10 top-0 bg-white dark:backdrop-blur-sm dark:bg-white/30 dark:text-slate-100">
+    <div className="shadow-lg w-full sticky z-10 top-0 backdrop-blur-sm bg-white/70 dark:backdrop-blur-sm dark:bg-white/30 dark:text-slate-100">
       <motion.div
         className="relative h-1 bg-gradient-to-r from-sky-500 to-indigo-500 mb-1"
         style={{ scaleX, transformOrigin: "0%" }}

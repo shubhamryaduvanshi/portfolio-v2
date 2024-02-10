@@ -21,8 +21,8 @@ export default function Home() {
           in building (and occasionally designing) exceptional websites,
           applications, and everything in between."
         />
-        <meta name="og:image" content="https://shubhamydv.netlify.app/myProfile.png" />
-        <meta property="og:url" content="https://shubhamydv.netlify.app/"></meta>
+        <meta name="og:image" content="https://www.shubhamyadav.com/myProfile.png" />
+        <meta property="og:url" content="https://www.shubhamyadav.com"></meta>
         <meta property="og:site_name" content="Shubham Yadav" />
         <meta
           name="keywords"

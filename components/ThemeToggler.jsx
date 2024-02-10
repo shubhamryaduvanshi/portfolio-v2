@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { FaMoon, FaRegMoon, FaRegSun, FaSun } from "react-icons/fa";
 
 const ThemeToggler = () => {
-  const [activeTheme, setActiveTheme] = useState("dark");
+  const [activeTheme, setActiveTheme] = useState("light");
 
   const toggleTheme = () => {
     const docTheme = document?.documentElement?.classList.value;
