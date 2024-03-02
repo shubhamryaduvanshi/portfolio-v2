@@ -1,21 +1,6 @@
 [
   {
     "id": 1,
-    "title": "Share The Task",
-    "bannerImage": "/assets/images/projects/sharethetask/poster.png",
-    "description": "'Share the Task' is a versatile project management web application designed to streamline and enhance project collaboration and task management. This platform empowers teams to efficiently create and manage tickets, oversee project progress, and organize user roles and responsibilities.",
-    "gitHubLink": "",
-    "techStack": ["React JS", "Chakra UI", "Django"],
-    "isPublicRepository": false,
-    "liveUrl": "https://www.sharethetask.com/",
-    "projectScreenShots": [
-      "sharethetask/image-1.jpg",
-      "sharethetask/image-2.jpg",
-      "sharethetask/image-3.jpg"
-    ]
-  },
-  {
-    "id": 2,
     "title": "Pokedex App",
     "bannerImage": "/assets/images/projects/pokedex/poster.png",
     "description": "A Pokedex app that allows you to search for Pokemon and view their stats.",
@@ -30,7 +15,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 2,
     "title": "Git Search",
     "bannerImage": "/assets/images/projects/gitSearch/poster.png",
     "description": "A Github user search app that allows you to search for Github users and view their profile.",
@@ -43,6 +28,21 @@
       "gitSearch/image-2.png",
       "gitSearch/image-3.png",
       "gitSearch/image-4.png"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Share The Task",
+    "bannerImage": "/assets/images/projects/sharethetask/poster.png",
+    "description": "'Share the Task' is a versatile project management web application designed to streamline and enhance project collaboration and task management. This platform empowers teams to efficiently create and manage tickets, oversee project progress, and organize user roles and responsibilities.",
+    "gitHubLink": "",
+    "techStack": ["React JS", "Chakra UI", "Django"],
+    "isPublicRepository": false,
+    "liveUrl": "https://www.sharethetask.com/",
+    "projectScreenShots": [
+      "sharethetask/image-1.jpg",
+      "sharethetask/image-2.jpg",
+      "sharethetask/image-3.jpg"
     ]
   },
   {

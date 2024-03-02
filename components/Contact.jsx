@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SocialMedia from "./SocialMedia";
 import { useForm } from "react-hook-form";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { AiFillCloseCircle } from "react-icons/ai";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -28,18 +28,32 @@ const Contact = () => {
       },
     })
       .then((response) => response.json())
-      .then((json) => {
-        reset();
-        setIsSent(true);
-        setIsLoading(false);
+      .then((res) => {
+        if (!res.ok) return handleError();
+        onMessageSentSuccessfully();
       })
-      .catch(() => {
-        setIsError(true);
-        setIsLoading(false);
-      });
+      .catch(() => handleError());
   };
 
-  const resetFields = () => {};
+  const handleError = () => {
+    setIsError(true);
+    setIsLoading(false);
+  };
+
+  const onMessageSentSuccessfully = () => {
+    reset();
+    setIsSent(true);
+    setIsLoading(false);
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      isSent && setIsSent(false);
+      isError && setIsError(false);
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, [isSent, isError]);
 
   return (
     <section id="contact">
@@ -162,19 +176,44 @@ const Contact = () => {
                   </div>
                 )}
               </div>
-
-              {!isLoading && isSent && (
-                <div className="text-green-500 flex items-center gap-2 font-medium py-2">
-                  <BsFillCheckCircleFill size={24} />
-                  <p>Message sent successfully. </p>
-                </div>
-              )}
-              {!isLoading && isError && (
-                <div className="text-red-500 flex items-center gap-2 font-medium py-2">
-                  <AiFillCloseCircle size={24} />
-                  <p>Something went wrong. Please try again later</p>
-                </div>
-              )}
+              <AnimatePresence>
+                {!isLoading && isSent && (
+                  <motion.div
+                    initial={{ opacity: 0, x: 10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{
+                      ease: "linear",
+                      x: { duration: 1 },
+                      opacity: { duration: 1.1 },
+                    }}
+                    viewport={{ once: false }}
+                    exit={{ opacity: 0, x: 10 }}
+                  >
+                    <div className="text-green-500 flex items-center gap-2 font-medium py-2">
+                      <BsFillCheckCircleFill size={24} />
+                      <p>Message sent successfully. </p>
+                    </div>
+                  </motion.div>
+                )}
+                {!isLoading && isError && (
+                  <motion.div
+                    initial={{ opacity: 0, x: 10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{
+                      ease: "linear",
+                      x: { duration: 1 },
+                      opacity: { duration: 1.1 },
+                    }}
+                    viewport={{ once: false }}
+                    exit={{ opacity: 0, x: 10 }}
+                  >
+                    <div className="text-red-500 flex items-center gap-2 font-medium py-2">
+                      <AiFillCloseCircle size={24} />
+                      <p>Something went wrong. Please try again later</p>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
               <button
                 type="submit"
                 className="px-8 py-2 mt-6 text-white dark:text-slate-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700"
