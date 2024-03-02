@@ -18,15 +18,17 @@ const Container = () => {
       <div className="fixed">
         <Bubbles />
       </div>
-      <ScrollSpy scrollThrottle={100} useBoxMethod={false}>
-        <Hero />
-        <About />
-        <Work />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
-      </ScrollSpy>
+      <div className="relative">
+        <ScrollSpy scrollThrottle={100} useBoxMethod={false}>
+          <Hero />
+          <About />
+          <Work />
+          <Skills />
+          <Projects />
+          <Contact />
+          <Footer />
+        </ScrollSpy>
+      </div>
     </div>
   );
 };
