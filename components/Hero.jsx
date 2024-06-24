@@ -69,9 +69,9 @@ const Hero = () => {
           viewport={{ once: true }}
           className="max-w-3xl text-justify md:text-center mt-6 md:mt-8 px-8 md:px-4 text-md text-gray-600 dark:text-slate-400"
         >
-          I am a Web Developer located in India, with expertise in crafting
-          outstanding websites and applications. My skills extend to both
-          development and occasional design work.
+          I&apos;m a Software Developer from India, specializing in creating
+          exceptional websites and applications, with skills in both development
+          and occasional design.
         </motion.h2>
 
         {/* social media icons */}

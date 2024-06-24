@@ -12,17 +12,15 @@ const Work = () => {
       website: "https://kuchnaya.com/",
       jobType: "Full Time",
       work: [
-        "Worked on a hunt booking web app. Primarily focused on creating reusable react components, multi-device responsiveness, partial payment feature, form validation, and SEO using <span className='font-medium text-slate-800 dark:text-slate-300'> GraphQL, Gatsby, Chakra UI,</span> and <span className='font-medium text-slate-800 dark:text-slate-300'>React Helmet.</span>",
+        "Worked on a hunt booking web app. Primarily focused on creating reusable react components, multi-device responsiveness, partial payment feature, forms validation, and SEO using <span className='font-medium text-slate-800 dark:text-slate-300'> GraphQL, Gatsby, Chakra UI,</span> and <span className='font-medium text-slate-800 dark:text-slate-300'>React Helmet.</span>",
         // "Worked on Figma plugin that generates proper JSON structure for Lottie files using React.",
         // "Worked on the home page for auropay.net using Next JS.",
         "Created reusable components and integrated stripe payment gateway for vidyback.com using <span className='font-medium text-slate-800 dark:text-slate-300'> React, Chakra UI, NodeJS </span> and <span className='font-medium text-slate-800 dark:text-slate-300'> Express. </span>",
         // "JSON driven dynamic form integration using React App.",
         " Designed and developed an <span className='font-medium text-slate-800 dark:text-slate-300'>embed-able checkout</span> widget with multiple client-side <span className='font-medium text-slate-800 dark:text-slate-300'> customizations </span>, end-to-end<span className='font-medium text-slate-800 dark:text-slate-300'> encryption</span> and validation in <span className='font-medium text-slate-800 dark:text-slate-300'> Vanilla JS </span>, similar to <span className='font-medium text-slate-800 dark:text-slate-300'> Stripe </span>elements.",
-        " Developed embed-able checkout <span className='font-medium text-slate-800 dark:text-slate-300'>widget configuration </span>dashboard (where the merchant/admin can configure the form, pay button, header, footer, payment options, and theme) in the <span className='font-medium text-slate-800 dark:text-slate-300'> Angular</span> web app.",
-
         " Developed an embed-able <span className='font-medium text-slate-800 dark:text-slate-300'>invoice pay </span>widget with end-to-end <span className='font-medium text-slate-800 dark:text-slate-300'> encryption </span>, multiple client-side <span className='font-medium text-slate-800 dark:text-slate-300'> customizations </span> and validation using <span className='font-medium text-slate-800 dark:text-slate-300'> Solid JS </span>from POC to Production. ",
+        " Developed embed-able checkout & invoice pay <span className='font-medium text-slate-800 dark:text-slate-300'>widget configuration </span>dashboard (where the merchant/admin can configure the form fields, buttons, header, footer, payment options, and theme) in the <span className='font-medium text-slate-800 dark:text-slate-300'> Angular</span> web app.",
 
-        " Developed an embed-able invoice pay widget<span className='font-medium text-slate-800 dark:text-slate-300'> configuration </span> dashboard (where the merchant/admin can configure the searchable fields, pay button, header, footer, payment options, and color scheme selector) in the <span className='font-medium text-slate-800 dark:text-slate-300'> Angular</span> web app.",
         " Developed an <span className='font-medium text-slate-800 dark:text-slate-300'>Invoice Pay</span> using Solid JS from Scratch.",
         " Worked on several other features in <span className='font-medium text-slate-800 dark:text-slate-300'>payments domain.</span>",
       ],

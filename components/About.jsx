@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { AiFillHome } from "react-icons/ai";
-import { FaCalendarAlt } from "react-icons/fa";
-import { GiHobbitDwelling } from "react-icons/gi";
+import { IoLanguage } from "react-icons/io5";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -10,20 +9,20 @@ const About = () => {
       id: 1,
       icon: <AiFillHome size={20} />,
       title: "Residence",
-      text: "Thane, India",
+      text: "Mumbai, India",
     },
     {
       id: 2,
-      icon: <FaCalendarAlt size={20} />,
-      title: "Age",
-      text: Date().slice(11, 15) - 2000,
+      icon: <IoLanguage size={20} />,
+      title: "Language",
+      text: "English, Hindi",
     },
-    {
-      id: 3,
-      icon: <GiHobbitDwelling size={20} />,
-      title: "Hobbies",
-      text: "Travelling, Sketching",
-    },
+    // {
+    //   id: 3,
+    //   icon: <GiHobbitDwelling size={20} />,
+    //   title: "Hobbies",
+    //   text: "Travelling, Sketching",
+    // },
   ];
 
   return (
@@ -69,10 +68,9 @@ const About = () => {
                   }}
                   viewport={{ once: true }}
                 >
-                  I&apos;m currently enrolled in the MCA program at Savitribai
-                  Phule Pune University. As a Frontend Web Developer based in
-                  India, my expertise lies in crafting outstanding websites and
-                  applications, with occasional design work.
+                  I specialize in both development and occasional design work,
+                  consistently delivering visually appealing and user-friendly
+                  digital experiences.
                 </motion.p>
 
                 <motion.p
@@ -87,10 +85,9 @@ const About = () => {
                   className="mt-6"
                   viewport={{ once: true }}
                 >
-                  My passion lies in creating digital entities that thrive on
-                  the internet. I am dedicated to constructing responsive
-                  front-end web applications and concurrently expanding my
-                  knowledge in backend technologies.
+                  Passionate about building thriving digital entities, I am
+                  dedicated to developing responsive web applications and
+                  expanding my knowledge in backend technologies.
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, x: -10 }}
@@ -104,9 +101,9 @@ const About = () => {
                   viewport={{ once: true }}
                   className="mt-6"
                 >
-                  Presently, my primary emphasis is on developing accessible and
-                  inclusive products, along with enhancing digital experiences
-                  for diverse clients at Kuchnaya Technolabs.
+                  My current focus is on creating accessible and inclusive
+                  products, enhancing digital experiences for diverse clients,
+                  and ensuring top-notch web performance.
                 </motion.p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mt-6 md:grid-cols-3">
@@ -155,7 +152,7 @@ const About = () => {
             >
               <Image
                 // src={"/assets/images/gamerProfile.webp"}
-                src={"/myProfile.png"}
+                src={"/myProfile_1.png"}
                 alt="Profile Picture"
                 width={320}
                 height={320}

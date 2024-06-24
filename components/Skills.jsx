@@ -3,18 +3,18 @@ import Image from "next/image";
 
 const Skills = () => {
   const skillsInfo = [
-    {
-      title: "HTML",
-      img: "html.png",
-    },
-    {
-      title: "CSS",
-      img: "css3.png",
-    },
-    {
-      title: "JavaScript",
-      img: "javascript.png",
-    },
+    // {
+    //   title: "HTML",
+    //   img: "html.png",
+    // },
+    // {
+    //   title: "CSS",
+    //   img: "css3.png",
+    // },
+    // {
+    //   title: "JavaScript",
+    //   img: "javascript.png",
+    // },
     {
       title: "React",
       img: "react.png",
@@ -36,17 +36,17 @@ const Skills = () => {
     //   img: "graphql.png",
     // },
     {
-      title: "Solid",
+      title: "Solid JS",
       img: "solid.png",
     },
     {
       title: "Angular",
       img: "angular.png",
     },
-    {
-      title: "Chakra UI",
-      img: "chakra.png",
-    },
+    // {
+    //   title: "Chakra UI",
+    //   img: "chakra.png",
+    // },
     // {
     //   title: "Bootstrap",
     //   img: "bootstrap.png",
@@ -63,10 +63,10 @@ const Skills = () => {
       title: "Node",
       img: "nodejs.png",
     },
-    {
-      title: "Postman",
-      img: "postman.png",
-    },
+    // {
+    //   title: "Postman",
+    //   img: "postman.png",
+    // },
     {
       title: "MongoDB",
       img: "mongodb.png",
@@ -79,10 +79,10 @@ const Skills = () => {
     //   title: "Firebase",
     //   img: "firebase.png",
     // },
-    {
-      title: "Sass",
-      img: "sass.png",
-    },
+    // {
+    //   title: "Sass",
+    //   img: "sass.png",
+    // },
     {
       title: "GitHub",
       img: "github.png",
@@ -95,10 +95,10 @@ const Skills = () => {
     //   title: "Heroku",
     //   img: "heroku.png",
     // },
-    {
-      title: "Netlify",
-      img: "netlify.png",
-    },
+    // {
+    //   title: "Netlify",
+    //   img: "netlify.png",
+    // },
     // {
     //   title: "AWS",
     //   img: "amazon-aws.png",
