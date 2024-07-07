@@ -2,6 +2,8 @@ import { useState } from "react";
 import { AiOutlineMenu, AiOutlineCloseCircle } from "react-icons/ai";
 import { motion, useScroll, useSpring } from "framer-motion";
 import ThemeToggler from "./ThemeToggler";
+import Image from "next/image";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -66,25 +68,22 @@ const Header = () => {
         className="relative h-1 bg-gradient-to-r from-sky-500 to-indigo-500 mb-1"
         style={{ scaleX, transformOrigin: "0%" }}
       />
-      <div className="flex justify-between items-center py-3 px-8  max-w-7xl mx-auto">
-        <a
-          className="text-2xl font-semibold font-greatVibes italic"
-          href="#home"
-        >
-          Shubham
+      <div className="flex justify-between items-center py-2 px-8  max-w-7xl mx-auto">
+        <a className="w-14" href="#home">
+          <Image src="/s-logo.png" width={100} height={100} alt="logo" />
         </a>
         <div className="md:hidden ml-auto pr-4">
           <ThemeToggler />
         </div>
-        <div className="hidden md:flex uppercase items-center">
+        <div className="hidden md:flex uppercase items-center gap-5">
           {MenuList.map((menu) => (
             <a
-              className="mx-3 "
+              className=""
               onClick={(e) => onPress(e)}
               href={menu.href}
               key={menu.id}
             >
-              <div data-to-scrollspy-id={menu.id} className="opacity-70">
+              <div data-to-scrollspy-id={menu.id} className="opacity-60">
                 {menu.displayName}
               </div>
             </a>
@@ -101,12 +100,11 @@ const Header = () => {
         </div>
 
         <div className="md:hidden">
-          <AiOutlineMenu
-            className="text-2xl"
+          <HiOutlineMenuAlt3
+            className="text-2xl ml-2"
             onClick={toggleMenu}
             style={{ opacity: showMenu ? 0 : 1 }}
           />
-
           {showMenu && (
             <motion.div
               initial={{ opacity: 0 }}
@@ -118,7 +116,7 @@ const Header = () => {
               className="absolute top-0 right-0 w-full h-screen bg-white  dark:backdrop-blur-sm dark:bg-black/80 shadow-md transition duration-600 ease-in-out"
             >
               <div className="flex flex-col justify-between items-center h-full">
-                <div className="flex items-center ml-auto py-4 px-6 cursor-pointer ">
+                <div className="flex items-center ml-auto py-6 px-7 cursor-pointer ">
                   <AiOutlineCloseCircle
                     size={32}
                     className="text-2xl text-slate-500 hover:text-slate-800 dark:hover:text-slate-400 mt-1"

@@ -7,8 +7,19 @@ const Work = () => {
     {
       id: 1,
       designation: "Software Developer",
+      company: "NeoSOFT Pvt. Ltd.",
+      duration: "Mar 2024 - Present",
+      website: "https://www.neosofttech.com",
+      jobType: "Full Time",
+      work: [
+        "Developing an innovative B2B procurement service web application using <span className='font-medium text-slate-800 dark:text-slate-300'> Next.js </span> and  <span className='font-medium text-slate-800 dark:text-slate-300'>Redux Toolkit </span>.",
+      ],
+    },
+    {
+      id: 2,
+      designation: "Software Developer",
       company: "Kuchnaya Technolabs Pvt. Ltd.",
-      duration: "May 2021 - Present",
+      duration: "May 2021 - Feb 2024",
       website: "https://kuchnaya.com/",
       jobType: "Full Time",
       work: [
@@ -58,7 +69,7 @@ const Work = () => {
 
         <div className="mt-10 ml-0 md:ml-8">
           {workInfo.map((work) => (
-            <div className="flex items-center" key={work.id}>
+            <div className="flex items-center mb-16" key={work.id}>
               <div className="flex flex-col">
                 <motion.p
                   initial={{ opacity: 0, x: -5 }}
