@@ -65,7 +65,7 @@ const Contact = () => {
             delay: 0.2,
           }}
           viewport={{ once: true }}
-          className="uppercase text-blue-600 text-lg"
+          className="uppercase text-blue-600 text-lg dark:text-blue-300"
         >
           Contact
         </motion.p>
@@ -262,7 +262,7 @@ const Contact = () => {
               <div className="flex flex-col mt-8 border py-1 px-2 border-blue-200 rounded-lg dark:border-slate-600 hover:text-blue-700">
                 <a
                   href="mailto:sde.shubham.yadav@gmail.com"
-                  className="text-blue-500 hover:text-blue-700"
+                  className="text-blue-500 hover:text-blue-700 dark:text-blue-300"
                 >
                   sde.shubham.yadav@gmail.com
                 </a>

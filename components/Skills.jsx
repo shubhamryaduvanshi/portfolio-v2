@@ -119,7 +119,7 @@ const Skills = () => {
             delay: 0.2,
           }}
           viewport={{ once: true }}
-          className="uppercase text-blue-600 text-lg"
+          className="uppercase text-blue-600 text-lg dark:text-blue-300"
         >
           Skills
         </motion.p>

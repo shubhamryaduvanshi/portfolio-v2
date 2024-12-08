@@ -31,7 +31,8 @@ const Hero = () => {
           viewport={{ once: true }}
           className="text-3xl md:text-4xl font-bold text-gray-600 dark:text-slate-200 pt-3 md:pt-4 pb-3 md:pb-6 "
         >
-          Hi, I&apos;m <span className="text-blue-600">Shubham</span>
+          Hi, I&apos;m{" "}
+          <span className="text-blue-600 dark:text-blue-300">Shubham</span>
         </motion.h1>
         <motion.div
           initial={{ opacity: 0 }}

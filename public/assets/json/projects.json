@@ -1,6 +1,22 @@
 [
   {
     "id": 1,
+    "title": "A.P. Eye Care & Opticals",
+    "bannerImage": "/assets/images/projects/apeyecare/poster.png",
+    "description": "This is a professional website created for an optometry shop offering comprehensive eye care services such as eye checkups, optometry consultations, and a selection of sunglasses.",
+    "techStack": ["Next JS", "Tailwind CSS"],
+    "isPublicRepository": false,
+    "liveUrl": "https://www.apeyecare.in",
+    "projectScreenShots": [
+      "apeyecare/Image-1.png",
+      "apeyecare/image-2.png",
+      "apeyecare/image-3.png",
+      "apeyecare/image-4.png"
+    ],
+    "isActive": true
+  },
+  {
+    "id": 2,
     "title": "Pokedex App",
     "bannerImage": "/assets/images/projects/pokedex/poster.png",
     "description": "A Pokedex app that allows you to search for Pokemon and view their stats.",
@@ -12,10 +28,11 @@
       "pokedex/Image-1.png",
       "pokedex/image-2.png",
       "pokedex/image-3.png"
-    ]
+    ],
+    "isActive": true
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Git Search",
     "bannerImage": "/assets/images/projects/gitSearch/poster.png",
     "description": "A Github user search app that allows you to search for Github users and view their profile.",
@@ -28,10 +45,11 @@
       "gitSearch/image-2.png",
       "gitSearch/image-3.png",
       "gitSearch/image-4.png"
-    ]
+    ],
+    "isActive": true
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Share The Task",
     "bannerImage": "/assets/images/projects/sharethetask/poster.png",
     "description": "'Share the Task' is a versatile project management web application designed to streamline and enhance project collaboration and task management. This platform empowers teams to efficiently create and manage tickets, oversee project progress, and organize user roles and responsibilities.",
@@ -43,10 +61,11 @@
       "sharethetask/image-1.jpg",
       "sharethetask/image-2.jpg",
       "sharethetask/image-3.jpg"
-    ]
+    ],
+    "isActive": true
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Image Hub",
     "bannerImage": "/assets/images/projects/imageHub/poster.png",
     "description": "Image Hub is a web application that allows users to download images. Images can be downloaded in different sizes.",
@@ -59,6 +78,7 @@
       "imageHub/image-2.png",
       "imageHub/image-3.png",
       "imageHub/image-4.png"
-    ]
+    ],
+    "isActive": false
   }
 ]

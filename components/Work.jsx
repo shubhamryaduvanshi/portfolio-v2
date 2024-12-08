@@ -48,7 +48,7 @@ const Work = () => {
             delay: 0.2,
           }}
           viewport={{ once: true }}
-          className="uppercase text-blue-600 text-lg"
+          className="uppercase text-blue-600 text-lg dark:text-blue-300"
         >
           Work
         </motion.p>
@@ -99,7 +99,7 @@ const Work = () => {
                   href={work.website}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-md text-blue-700 flex items-center mt-0.5"
+                  className="text-md text-blue-700 flex items-center mt-0.5 dark:text-blue-300"
                 >
                   {work.company}{" "}
                   <BsBoxArrowUpRight className="ml-1 mb-2" size={12} />

@@ -67,7 +67,8 @@ Freelancer/Contractor Availability,
 Kuchnaya Technolabs Pvt. Ltd.,
 Frontend developer near me,
 Kuchnaya Technolabs,
-Fullstack developer near mumbai
+Fullstack developer near mumbai,
+Neosoft Technologies
 "
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

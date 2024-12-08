@@ -36,7 +36,7 @@ const About = () => {
               delay: 0.1,
             }}
             viewport={{ once: true }}
-            className="uppercase text-blue-600 text-lg"
+            className="uppercase text-blue-600 text-lg dark:text-blue-300"
           >
             About
           </motion.p>

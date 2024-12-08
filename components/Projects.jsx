@@ -32,7 +32,7 @@ const Projects = () => {
             delay: 0.2,
           }}
           viewport={{ once: true }}
-          className="uppercase text-blue-600 text-lg"
+          className="uppercase text-blue-600 text-lg dark:text-blue-300"
         >
           Projects
         </motion.p>
@@ -51,26 +51,28 @@ const Projects = () => {
           Personal Projects
         </motion.p>
         <div className="mt-10 ml-0 md:ml-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 sm:gap-4 md:gap-6 mx-auto">
-          {projectInfo.map((project) => (
-            <motion.div
-              initial={{ opacity: 0, x: -5 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{
-                ease: "linear",
-                x: { duration: 2 },
-                opacity: { duration: 2 },
-                delay: project.id / 2 - 0.3,
-              }}
-              viewport={{ once: true }}
-              key={project.id}
-            >
-              <Project
+          {projectInfo
+            .filter((project) => project.isActive)
+            .map((project) => (
+              <motion.div
+                initial={{ opacity: 0, x: -5 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{
+                  ease: "linear",
+                  x: { duration: 2 },
+                  opacity: { duration: 2 },
+                  delay: project.id / 2 - 0.3,
+                }}
+                viewport={{ once: true }}
                 key={project.id}
-                project={project}
-                showProjectDetails={showProjectDetails}
-              />
-            </motion.div>
-          ))}
+              >
+                <Project
+                  key={project.id}
+                  project={project}
+                  showProjectDetails={showProjectDetails}
+                />
+              </motion.div>
+            ))}
         </div>
         {showDialog && (
           <Dialog projectInfo={activeProject} closeDialog={closeDialog} />
